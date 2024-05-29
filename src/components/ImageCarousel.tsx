@@ -12,7 +12,7 @@ const DATA = [
   {
     image: "https://i.imgur.com/ERfq4i2.jpg",
     maintitle: "Welcome to",
-    subtitle: "Sri Lanka Lak Travel Destination",
+    subtitle: "Sri Lanka Lak Dream Travel Destination",
   },
 ];
 

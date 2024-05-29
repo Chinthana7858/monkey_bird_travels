@@ -29,7 +29,7 @@ export default function Home() {
             <div className=" basis-1/2">
               <div className=" text-3xl lg:px-16 px-5 font-semibold text-slate-800">
                 {" "}
-                Explore amazing Sri Lanka with Lak Travel Destination
+                Explore amazing Sri Lanka with Lak Dream Travel Destination
               </div>
               <div className=" text-slate-600 px-5 lg:px-16  font-medium p-3">
                 Imagine exploring the beautiful country of Sri Lanka, touring
