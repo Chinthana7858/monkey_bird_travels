@@ -27,7 +27,7 @@ export default function Home() {
               <div className="relative w-screen h-full">
                 <img
                   src="https://i.imgur.com/QdhxF3S.jpg"
-                  className="w-screen h-screen object-cover"
+                  className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
@@ -89,10 +89,20 @@ export default function Home() {
           <div>
             <VehicleComponent
               title={"Car"}
-              imgUrl={"https://i.imgur.com/QdhxF3S.jpg"}
+              imgUrl={"https://i.imgur.com/a4gRSWP.jpg"}
               facts={[
                 "Toyota Corolla or Nissan Sedan",
                 "Maximum 3 Passengers & enough Room for Baggage’s",
+                "Fully Air Conditioned, Fully Insured, Perfect seat belts",
+                "Onboard WiFi ",
+              ]}
+            />
+            <VehicleComponent
+              title={"Mini bus"}
+              imgUrl={"https://i.imgur.com/3Nv1qeM.jpg"}
+              facts={[
+                "Toyota Coaster",
+                "Maximum 20 Passengers & enough Room for Baggage’s",
                 "Fully Air Conditioned, Fully Insured, Perfect seat belts",
                 "Onboard WiFi ",
               ]}

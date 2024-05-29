@@ -124,7 +124,7 @@ export default function Navbar() {
                 onClick={() => toggleDropdown1()}
               >
                 Our Services
-                {isDropdownOpen1?<IoIosArrowUp />:<IoIosArrowDown />}
+                {isDropdownOpen1 ? <IoIosArrowUp /> : <IoIosArrowDown />}
               </div>
               {isDropdownOpen1 && (
                 <div className="absolute top-full left-0 w-full bg-custom-primaryblue z-10">
@@ -134,11 +134,16 @@ export default function Navbar() {
                   >
                     Airport transfer
                   </a>
-                  <a href="Hire-A-Car"
-                   className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center">
+                  <a
+                    href="Hire-A-Car"
+                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
+                  >
                     Hire a car
                   </a>
-                  <a className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center">
+                  <a
+                    href="Private-Driver"
+                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
+                  >
                     Private driver
                   </a>
                 </div>
@@ -148,9 +153,12 @@ export default function Navbar() {
 
           {/* Second row */}
           <div className="flex justify-between w-full">
-            <div className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            <Link
+              href="/Day-Excursions"
+              className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0"
+            >
               Day Excursions
-            </div>
+            </Link>
             <div className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Tour Packages
             </div>
@@ -235,18 +243,22 @@ export default function Navbar() {
                     </li>
                   </Link>
                   <Link href="/Hire-A-Car">
-                  <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                    Hire a car
-                  </li>
+                    <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                      Hire a car
+                    </li>
                   </Link>
-                  <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                    Private Driver
-                  </li>
+                  <Link href="/Private-Driver">
+                    <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                      Private Driver
+                    </li>
+                  </Link>
                 </div>
               )}
-              <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                Day Excursions
-              </li>
+              <Link href="/Day-Excursions">
+                <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                  Day Excursions
+                </li>
+              </Link>
               <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                 Tour Packages
               </li>
