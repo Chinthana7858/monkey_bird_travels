@@ -27,7 +27,7 @@ export default function Home() {
               <div className="relative w-screen h-full">
                 <img
                   src="https://i.imgur.com/jMFbSSb.jpg"
-                  className="w-screen h-screen object-cover"
+                  className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
