@@ -1,7 +1,7 @@
-"use client";
-import Slider1 from "@/components/ImageCarousel";
+
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
+import ContactSection from "@/components/quickcontact";
 import ReviewComponent from "@/components/reviewcomponent";
 import Head from "next/head";
 import Link from "next/link";
@@ -51,12 +51,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div
-            className="relative flex items-center justify-center bg-cover bg-center"
-            style={{
-              backgroundImage: "url('https://i.imgur.com/0Onzutl.jpg')",
-            }}
-          >
+          <div className="relative flex items-center justify-center bg-cover bg-center">
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
               <div className="text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-blue-600">
@@ -82,12 +77,74 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <div className=" flex-1 lg:flex">
+          <div className=" w-4"></div>
+            <AirportTransferComponent
+              title={"Friendly Private Driver guide"}
+              description={
+                "We are Friendly / Professional Driver Guides with great Knowledge about the Sri Lanka."
+              }
+              image={"https://i.imgur.com/c2DVMJA.png"}
+            />
+            <div className=" w-4"></div>
+            <AirportTransferComponent
+              title={"Super Fast Booking"}
+              description={
+                "You can book your tour within minutes by choosing one of our taxi service or tour package." }
+              image={"https://i.imgur.com/wnGxqXv.jpg"}
+            />
+              <div className=" w-4"></div>
+            <AirportTransferComponent
+              title={"100+ Amazing Destinations"}
+              description={
+               "We have created some awesome tour plans with Top sights and some hidden tourist Attractions." }
+              image={"https://i.imgur.com/93nKZk8.jpg"}
+            />{" "}
+              <div className=" w-4"></div>
+            <AirportTransferComponent
+              title={"FULLY VACCINATED ?"}
+              description={
+               "Then you can stay at any type of accommodation and no need to be subjected to an on-arrival PCR test." }
+              image={"https://i.imgur.com/KlcUWV4.jpg"}
+            />
+              <div className=" w-4"></div>
+          </div>
+          <div>
+            <ContactSection/>
+          </div>
         </section>
         <ReviewComponent />
         <footer>
           <Footer />
         </footer>
       </main>
+    </div>
+  );
+}
+
+interface AirportTransferProps {
+  title: string;
+  description: string;
+  image: string;
+}
+
+export function AirportTransferComponent({
+  title,
+  description,
+  image,
+}: AirportTransferProps) {
+  return (
+    <div className="w-[90vw] lg:w-[15vw] h-auto text-slate-800 border-custom-primaryblue border-2 rounded-xl overflow-hidden shadow-lg mx-auto my-4 flex-1 ">
+      <div className="">
+        <img src={image} alt={title} className="rounded-t-xl scale-75" />
+      </div>
+      <div className="p-4">
+        <h1 className="text-lg font-semibold mb-2 text-custom-primaryblue ">
+          {title}
+        </h1>
+        <p className="text-base font-medium">{description}</p>
+      </div>
+      <div className=" w-full py-2 bg-custom-primaryblue"></div>
     </div>
   );
 }
