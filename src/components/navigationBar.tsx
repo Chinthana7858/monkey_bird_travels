@@ -134,7 +134,8 @@ export default function Navbar() {
                   >
                     Airport transfer
                   </a>
-                  <a className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center">
+                  <a href="Hire-A-Car"
+                   className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center">
                     Hire a car
                   </a>
                   <a className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center">
@@ -192,7 +193,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt=""
-              className="cursor-pointer scale-50  h-[10vh]"
+              className="cursor-pointer scale-75  h-[10vh]"
             />
           </div>
           <div className=" pr-4" onClick={toggleMobileDropdown}>
@@ -233,9 +234,11 @@ export default function Navbar() {
                       Airport transfer
                     </li>
                   </Link>
+                  <Link href="/Hire-A-Car">
                   <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                     Hire a car
                   </li>
+                  </Link>
                   <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                     Private Driver
                   </li>
