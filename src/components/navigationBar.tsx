@@ -15,9 +15,16 @@ export default function Navbar() {
   const [showDiscoverSL, setShowDiscoverSL] = useState(false);
 
   const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
+  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
 
   const toggleDropdown1 = () => {
     setIsDropdownOpen1(!isDropdownOpen1);
+    setIsDropdownOpen2(false)
+  };
+
+  const toggleDropdown2 = () => {
+    setIsDropdownOpen2(!isDropdownOpen2);
+    setIsDropdownOpen1(false)
   };
 
   const toggleMobileDropdown = () => {
@@ -159,31 +166,46 @@ export default function Navbar() {
             >
               Day Excursions
             </Link>
-            <div className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            <Link href="/Tour-Packages" className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Tour Packages
-            </div>
-            <div className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            </Link>
+            <Link href="/Tailor-Made-Tours" className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Tailor Made Tours
-            </div>
+            </Link>
           </div>
 
           {/* Third row */}
           <div className="flex justify-between w-full">
             <div className="relative w-[40%]">
-              <div className="w-full bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0 h-[7vh]">
-                Discover Sri Lanka <IoIosArrowDown />
+            <div
+                className="w-full bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0 h-[7vh]"
+                onClick={() => toggleDropdown2()}
+              >
+               Discover Sri Lanka
+                {isDropdownOpen2 ? <IoIosArrowUp /> : <IoIosArrowDown />}
               </div>
-              <select className="absolute inset-0 opacity-0 z-10 w-full h-full bg-custom-primaryblue cursor-pointer hover:bg-custom-secondaryblue">
-                <option value="service1" className=" cursor-pointer">
-                  Destinations
-                </option>
-                <option value="service2" className=" cursor-pointer">
-                  Things to do
-                </option>
-                <option value="service3" className=" cursor-pointer">
-                  Blog
-                </option>
-              </select>
+              {isDropdownOpen2 && (
+                <div className="absolute top-full left-0 w-full bg-custom-primaryblue z-10">
+                  <a
+                    href="Destinations"
+                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
+                  >
+                    Destinations
+                  </a>
+                  <a
+                    href="Hire-A-Car"
+                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
+                  >
+                    Things to do
+                  </a>
+                  <a
+                    href="Private-Driver"
+                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
+                  >
+                    Blog
+                  </a>
+                </div>
+              )}
             </div>
             <div className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Contact Us
@@ -259,12 +281,16 @@ export default function Navbar() {
                   Day Excursions
                 </li>
               </Link>
+              <Link href="/Tour-Packages">
               <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                 Tour Packages
               </li>
+              </Link>
+              <Link href="/Tailor-Made-Tours">
               <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                 Tailor Made Tours
               </li>
+              </Link>
               <li
                 className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium"
                 onClick={() => {
@@ -279,9 +305,10 @@ export default function Navbar() {
               </li>
               {showDiscoverSL && (
                 <div>
+                     <Link href="/Destinations">
                   <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                     Destinations
-                  </li>
+                  </li></Link>
                   <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                     Things to do
                   </li>
