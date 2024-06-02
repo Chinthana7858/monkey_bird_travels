@@ -2,12 +2,12 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
 import ContactSection from "@/components/quickcontact";
 import ReviewComponent from "@/components/reviewcomponent";
-import VehicleComponent from "@/app/Hire-A-Car/vehiclecomponent";
 import Head from "next/head";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import { vehicles } from "@/database/vehicles";
+import DestinationCard from "./destinationcard";
+import { destinations } from "@/database/destinations"; 
 
 export default function Home() {
   return (
@@ -27,13 +27,13 @@ export default function Home() {
             <div className="relative w-screen h-full">
               <div className="relative w-screen h-full">
                 <img
-                  src="https://i.imgur.com/QdhxF3S.jpg"
+                  src="https://i.imgur.com/OM7VTcn.jpg"
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
-                    Hire a car
+                    Destinations
                   </div>
                   <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
                     <Link href="/">
@@ -46,7 +46,7 @@ export default function Home() {
                     </span>
 
                     <IoIosArrowForward color="" size={30} className="mx-2" />
-                    <span>Hire a car</span>
+                    <span>Destinations</span>
                   </div>
                 </div>
               </div>
@@ -56,46 +56,33 @@ export default function Home() {
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
               <div className="text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-blue-600">
-                  Hire a Car in Sri Lanka
+                  Tourists Destinations in Sri Lanka
                 </div>
               </div>
               <div className="text-slate-600 px-5 lg:px-16 font-medium">
-                Sri Lanka is a beautiful country with plenty to see and do. Why
-                not make the most of your time here by hiring a car with a
-                driver? Chamila Tours, At our car hire company, we offer a wide
-                range of vehicles to choose from, as well as a team of
-                experienced drivers who know the best places to go in Sri Lanka.
-                Whether you’re looking for a taxi to take you from the airport
-                to your hotel or you want to explore more of the country with a
-                private driver, we can help. We also offer car hire with a
-                driver in Colombo, so you can explore the city at your own pace.
-                Why not visit some of the city’s famous landmarks, such as the
-                Colombo Fort, Gangaramaya Temple or the National Museum? Or
-                maybe you’d rather explore the stunning beaches of Sri Lanka?
-                Whatever you choose to do, we’re sure you’ll have a great time.
-                Contact us today to hire a car with a driver in Sri Lanka!. We
-                have Cars, Mini Van, Van – HI roof, Mini Bus & Bus Single Deck.
+                Sri Lanka is a popular tourist destination for a reason: it’s
+                gorgeous. This tiny island nation has a huge range of diverse
+                landscapes to offer, from mountains and cliffs to waterfalls and
+                beaches. And if that’s not enough, there are also temples. If
+                you’re looking for beautiful places to visit in Sri Lanka, look
+                no further. We’ve got a list of the top tourist attractions in
+                Sri Lanka (Sri Lanka tourist places), along with tips on the
+                best way to experience them. So, whether you’re looking for
+                culture, adventure, or just some serious relaxation, Sri Lanka
+                has something for you. SO, here are the best Sri Lanka Tourist
+                Places.
               </div>
             </div>
           </div>
-          <div className="relative flex items-center justify-center bg-cover bg-center">
-            <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
-              <div className="text-4xl lg:px-16 px-5 mb-5">
-                <div className="font-semibold text-slate-600">
-                  TYPE OF VEHICLES TO CHOOSE
-                </div>
-              </div>
-            </div>
-          </div>
+    
           <div>
-          {vehicles.map((vehicle, index) => (
-              <VehicleComponent
-                key={index}
-                title={vehicle.title}
-                imgUrl={vehicle.imgUrl}
-                facts={vehicle.facts}
-              />
+          <div className="pt-2 columns-2 md:columns-3 lg:columns-3 mx-2">
+            {destinations.map((destination, index) => (
+              <div key={index} className="relative mb-4 break-inside-avoid">
+                <DestinationCard title={destination.title} imgUrl={destination.imgUrl} />
+              </div>
             ))}
+          </div>
           </div>
           <div>
             <ContactSection />
@@ -109,4 +96,3 @@ export default function Home() {
     </div>
   );
 }
-

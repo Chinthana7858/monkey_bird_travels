@@ -4,7 +4,10 @@ import emailjs from "emailjs-com";
 import { IoIosCall, IoLogoWhatsapp } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 
-export function QuickContact() {
+interface QuickContactProps {
+  size?: string;
+}
+export function QuickContact({ size = "" }: QuickContactProps ) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -42,7 +45,7 @@ export function QuickContact() {
   };
 
   return (
-    <div className="mx-auto mt-10 p-6 bg-white rounded-xl shadow-xl space-y-4 border-slate-600 text-slate-800 w-[90vw] lg:w-[60vw]">
+    <div className={`w-[100vw] mx-auto mt-10 p-6 bg-white rounded-xl shadow-xl space-y-4 border-slate-600 text-slate-800 ${size === 'normal' ? 'lg:w-[90vw]' : 'lg:w-[30vw]'}`}>
       <h2 className="text-2xl font-bold text-center text-gray-800">
         Quick Contact
       </h2>
@@ -112,7 +115,7 @@ export function QuickContact() {
 export default function ContactSection() {
   return (
     <div className=" flex-1 lg:flex ">
-      <QuickContact />
+      <QuickContact size="normal"/>
       <ContactDetails />
     </div>
   );

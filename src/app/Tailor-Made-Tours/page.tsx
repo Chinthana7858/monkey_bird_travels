@@ -1,13 +1,15 @@
+"use client"
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
-import ContactSection from "@/components/quickcontact";
 import ReviewComponent from "@/components/reviewcomponent";
-import VehicleComponent from "@/app/Hire-A-Car/vehiclecomponent";
+import { TypeAnimation } from "react-type-animation";
 import Head from "next/head";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import { vehicles } from "@/database/vehicles";
+import TailorMadeTours from "./tailormadetourdform";
+import { ContactDetails, QuickContact } from "@/components/quickcontact";
+import AutoChangingTourPackages from "./autochangingpackages";
 
 export default function Home() {
   return (
@@ -27,13 +29,13 @@ export default function Home() {
             <div className="relative w-screen h-full">
               <div className="relative w-screen h-full">
                 <img
-                  src="https://i.imgur.com/QdhxF3S.jpg"
+                  src="https://i.imgur.com/kri7cZJ.jpg"
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
-                    Hire a car
+                    Tailor Made Tours
                   </div>
                   <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
                     <Link href="/">
@@ -46,7 +48,7 @@ export default function Home() {
                     </span>
 
                     <IoIosArrowForward color="" size={30} className="mx-2" />
-                    <span>Hire a car</span>
+                    <span>Tailor Made Tours</span>
                   </div>
                 </div>
               </div>
@@ -56,25 +58,25 @@ export default function Home() {
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
               <div className="text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-blue-600">
-                  Hire a Car in Sri Lanka
+                  Tailor Made Tours Sri Lanka
                 </div>
               </div>
               <div className="text-slate-600 px-5 lg:px-16 font-medium">
-                Sri Lanka is a beautiful country with plenty to see and do. Why
-                not make the most of your time here by hiring a car with a
-                driver? Chamila Tours, At our car hire company, we offer a wide
-                range of vehicles to choose from, as well as a team of
-                experienced drivers who know the best places to go in Sri Lanka.
-                Whether you’re looking for a taxi to take you from the airport
-                to your hotel or you want to explore more of the country with a
-                private driver, we can help. We also offer car hire with a
-                driver in Colombo, so you can explore the city at your own pace.
-                Why not visit some of the city’s famous landmarks, such as the
-                Colombo Fort, Gangaramaya Temple or the National Museum? Or
-                maybe you’d rather explore the stunning beaches of Sri Lanka?
-                Whatever you choose to do, we’re sure you’ll have a great time.
-                Contact us today to hire a car with a driver in Sri Lanka!. We
-                have Cars, Mini Van, Van – HI roof, Mini Bus & Bus Single Deck.
+                Looking for the perfect tailor made holiday to Sri Lanka? Look
+                no further! Our team of experts will work with you to create the
+                perfect Sri Lankan holiday experience, tailored specifically to
+                your needs and interests. From relaxing beach holidays to
+                exciting adventure tours, we have something for everyone. Our
+                experienced team will help you find the best destinations and
+                experiences in Sri Lanka, so you can make the most of your time
+                in this incredible country. We offer a range of tailor made
+                holiday to sri lanka, or we can create a custom package just for
+                you. We also have a wide range of accommodation options to
+                choose from, so you can find the perfect place to stay during
+                your holiday. And our range of transport options makes getting
+                around Sri Lanka easy and convenient. With our tailor made
+                holiday to sri lanka, you’ll have everything you need to make
+                the most of your holiday in Sri Lanka.
               </div>
             </div>
           </div>
@@ -82,23 +84,34 @@ export default function Home() {
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
               <div className="text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-slate-600">
-                  TYPE OF VEHICLES TO CHOOSE
+                <TypeAnimation
+                    sequence={[
+                      " Plan",
+                      1000,
+                      "Customize",
+                      1000,
+                      "Tailor Make ",
+                      1000,
+                    ]}
+                    cursor={false}
+                    speed={50}
+                    repeat={0}
+                    style={{ fontSize: "1em" }}
+                   
+                    className=" text-yellow-500"
+                  /> Your Journey
+                
                 </div>
               </div>
             </div>
           </div>
-          <div>
-          {vehicles.map((vehicle, index) => (
-              <VehicleComponent
-                key={index}
-                title={vehicle.title}
-                imgUrl={vehicle.imgUrl}
-                facts={vehicle.facts}
-              />
-            ))}
-          </div>
-          <div>
-            <ContactSection />
+          <div className=" flex-1 lg:flex">
+            <TailorMadeTours/>
+            <div className=" flex-1 mx-auto">
+            <ContactDetails />
+            <AutoChangingTourPackages/>
+            <QuickContact />
+            </div>
           </div>
         </section>
         <ReviewComponent />
@@ -109,4 +122,3 @@ export default function Home() {
     </div>
   );
 }
-
