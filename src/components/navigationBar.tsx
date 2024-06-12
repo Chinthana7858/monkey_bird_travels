@@ -19,12 +19,12 @@ export default function Navbar() {
 
   const toggleDropdown1 = () => {
     setIsDropdownOpen1(!isDropdownOpen1);
-    setIsDropdownOpen2(false)
+    setIsDropdownOpen2(false);
   };
 
   const toggleDropdown2 = () => {
     setIsDropdownOpen2(!isDropdownOpen2);
-    setIsDropdownOpen1(false)
+    setIsDropdownOpen1(false);
   };
 
   const toggleMobileDropdown = () => {
@@ -68,27 +68,27 @@ export default function Navbar() {
             </div>
           </div>
           <div className="items-center justify-center flex border-2 w-full">
-            <div className="">
+            <div className=" text-blue-600">
               <ImFacebook2
                 size={40}
-                color="blue"
+                color=""
                 className=" hover:scale-110 cursor-pointer"
                 onClick={() => {
                   toggleOurServices();
                 }}
               />
             </div>
-            <div className="">
+            <div className=""  style={{ color: '#E1306C' }} >
               <FaInstagramSquare
                 size={50}
-                color="red"
+                color=""
                 className=" hover:scale-110 cursor-pointer"
               />
             </div>
-            <div className="">
+            <div className=""  style={{ color: '#FF0000' }}>
               <FaYoutubeSquare
                 size={50}
-                color="red"
+                color=""
                 className=" hover:scale-110 cursor-pointer"
               />
             </div>
@@ -166,10 +166,16 @@ export default function Navbar() {
             >
               Day Excursions
             </Link>
-            <Link href="/Tour-Packages" className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            <Link
+              href="/Tour-Packages"
+              className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0"
+            >
               Tour Packages
             </Link>
-            <Link href="/Tailor-Made-Tours" className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            <Link
+              href="/Tailor-Made-Tours"
+              className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0"
+            >
               Tailor Made Tours
             </Link>
           </div>
@@ -177,11 +183,11 @@ export default function Navbar() {
           {/* Third row */}
           <div className="flex justify-between w-full">
             <div className="relative w-[40%]">
-            <div
+              <div
                 className="w-full bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0 h-[7vh]"
                 onClick={() => toggleDropdown2()}
               >
-               Discover Sri Lanka
+                Discover Sri Lanka
                 {isDropdownOpen2 ? <IoIosArrowUp /> : <IoIosArrowDown />}
               </div>
               {isDropdownOpen2 && (
@@ -193,13 +199,13 @@ export default function Navbar() {
                     Destinations
                   </a>
                   <a
-                    href="Hire-A-Car"
+                    href="Things-To-Do"
                     className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
                   >
                     Things to do
                   </a>
                   <a
-                    href="Private-Driver"
+                    href="Blogs"
                     className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
                   >
                     Blog
@@ -207,9 +213,10 @@ export default function Navbar() {
                 </div>
               )}
             </div>
-            <div className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            <Link
+              href="/Contact-Us" className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Contact Us
-            </div>
+            </ Link>
             <div className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Enquire Now
             </div>
@@ -282,14 +289,14 @@ export default function Navbar() {
                 </li>
               </Link>
               <Link href="/Tour-Packages">
-              <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                Tour Packages
-              </li>
+                <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                  Tour Packages
+                </li>
               </Link>
               <Link href="/Tailor-Made-Tours">
-              <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                Tailor Made Tours
-              </li>
+                <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                  Tailor Made Tours
+                </li>
               </Link>
               <li
                 className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium"
@@ -305,21 +312,28 @@ export default function Navbar() {
               </li>
               {showDiscoverSL && (
                 <div>
-                     <Link href="/Destinations">
-                  <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                    Destinations
-                  </li></Link>
-                  <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                    Things to do
-                  </li>
+                  <Link href="/Destinations">
+                    <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                      Destinations
+                    </li>
+                  </Link>
+                  <Link href="/Things-To-Do">
+                    <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                      Things to do
+                    </li>
+                  </Link>
+                  <Link href="/Blogs">
                   <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                     Blog
                   </li>
+                  </Link>
                 </div>
               )}
+                <Link href="/Contact-Us">
               <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                 Contact Us
               </li>
+              </Link>
               <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                 Enquire Now
               </li>
