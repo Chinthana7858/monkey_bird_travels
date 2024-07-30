@@ -4,8 +4,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { IoIosArrowForward, IoMdDoneAll } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import TourPackage from "./tourpackage";
 import { dayexcursions } from "@/database/dayexcursions";
+import TourPackage from "../Tour-Packages/tourpackageCard";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -71,15 +71,7 @@ export default function Home() {
           <div className="text-4xl lg:px-16 px-5 mb-5 text-center font-sans"></div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
           {dayexcursions.map((packageInfo, index) => (
-              <TourPackage
-                key={index}
-                name={packageInfo.name}
-                imgUrl={packageInfo.imgUrl}
-                description={packageInfo.description}
-                numOfDays={packageInfo.numOfDays}
-                numOfPeople={packageInfo.numOfPeople}
-                season={packageInfo.season}
-              />
+              <TourPackage id={packageInfo.id}              />
             ))}
            
           </div>

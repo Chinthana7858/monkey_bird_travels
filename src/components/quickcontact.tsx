@@ -124,7 +124,7 @@ export default function ContactSection() {
 export function ContactDetails() {
     return (
       <div
-        className="w-[90vw] lg:w-[30vw] mx-auto mt-10 p-6 space-y-4 my-4 text-white rounded-xl shadow-lg"
+        className="w-[90vw] lg:w-[30vw] mx-auto mt-3 p-6 space-y-4 my-4 text-white rounded-xl shadow-lg"
         style={{
           backgroundImage: "url('https://i.imgur.com/0Onzutl.jpg')",
           backgroundSize: 'cover',

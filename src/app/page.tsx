@@ -1,13 +1,14 @@
-
+import BooleanToggle from "@/components/BooleanToggle";
 import Slider1 from "@/components/ImageCarousel";
 import ReviewCarousel from "@/components/ReviewCarousel";
 import Destination from "@/components/destination";
+import Enquirenow from "@/components/enquire_now";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
 import Review from "@/components/review";
 import ReviewComponent from "@/components/reviewcomponent";
-import TourPackage from "@/components/tourPackage";
 import Head from "next/head";
+import TourPackage from "./Tour-Packages/tourpackageCard";
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
       </Head>
       <main className=" bg-white  ">
         <section className="">
-          <nav className="z-20 w-screen lg:absolute">
+          <nav className="z-20 w-full lg:absolute">
             <Navbar />
+            {/* <BooleanToggle /> */}
           </nav>
           <Slider1 />
         </section>
@@ -70,36 +72,9 @@ export default function Home() {
             Our most popular Tour Packages
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
-            <TourPackage
-              title={"Heritage Tour"}
-              imgUrl={"https://i.imgur.com/RNu0xm9.jpg"}
-              description={
-                "This tour package is included the main historical, architectural, and sacred places which included into the Cultural Triangle in Sri Lanka that you must travel to."
-              }
-              numOfDays={"7"}
-              numOfNights={"6"}
-              season={"All Year Round"}
-            />
-            <TourPackage
-              title={"Heritage Tour"}
-              imgUrl={"https://i.imgur.com/wOgu2Xj.jpg"}
-              description={
-                "This tour package is included the main historical, architectural, and sacred places which included into the Cultural Triangle in Sri Lanka that you must travel to."
-              }
-              numOfDays={"7"}
-              numOfNights={"6"}
-              season={"All Year Round"}
-            />
-            <TourPackage
-              title={"Heritage Tour"}
-              imgUrl={"https://i.imgur.com/UYrJ2L0.jpg"}
-              description={
-                "This tour package is included the main historical, architectural, and sacred places which included into the Cultural Triangle in Sri Lanka that you must travel to."
-              }
-              numOfDays={"7"}
-              numOfNights={"6"}
-              season={"All Year Round"}
-            />
+            <TourPackage id={"1"} />
+            <TourPackage id={"2"} />
+            <TourPackage id={"3"} />
           </div>
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Popular destinations
@@ -124,10 +99,11 @@ export default function Home() {
               imgUrl="https://i.imgur.com/oke6pTe.jpg"
             />
           </div>
-          <ReviewComponent/>
+          <ReviewComponent />
         </section>
+
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
       </main>
     </div>

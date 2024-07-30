@@ -20,7 +20,7 @@ export default function Home() {
 
       <main className=" bg-white  ">
         <section className="">
-          <nav className="z-20 w-screen lg:absolute">
+          <nav className="z-20 w-full lg:absolute">
             <Navbar />
           </nav>
           <div className="relative w-screen h-full">

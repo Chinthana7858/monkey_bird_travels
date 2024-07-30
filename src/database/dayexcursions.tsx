@@ -1,5 +1,6 @@
 export const dayexcursions = [
     {
+      id:"1",
       name: "Jaffna Day Tour",
       imgUrl: "https://i.imgur.com/wOgu2Xj.jpg",
       description: "Jaffna market and city",
@@ -7,7 +8,7 @@ export const dayexcursions = [
       numOfPeople: "0-7",
       season: "",
     },
-    {
+    { id:"",
       name: "Kandy Day Tour",
       imgUrl: "https://i.imgur.com/FqojsAR.jpg",
       description: "Jaffna market and city",
@@ -15,7 +16,7 @@ export const dayexcursions = [
       numOfPeople: "0-7",
       season: "",
     },
-    {
+    { id:"",
       name: "Sigiriya Day Tour",
       imgUrl: "https://i.imgur.com/dpGXe2b.jpg",
       description: "Jaffna market and city",
@@ -23,7 +24,7 @@ export const dayexcursions = [
       numOfPeople: "0-7",
       season: "",
     },
-    {
+    { id:"",
       name: "Kithulgala Day Tour",
       imgUrl: "https://i.imgur.com/gFrQnv0.jpg",
       description: "Jaffna market and city",
@@ -31,7 +32,7 @@ export const dayexcursions = [
       numOfPeople: "0-7",
       season: "",
     },
-    {
+    { id:"",
       name: "Galle Day Tour",
       imgUrl: "https://i.imgur.com/wmOq8kl.jpg",
       description: "Jaffna market and city",
@@ -39,7 +40,7 @@ export const dayexcursions = [
       numOfPeople: "0-7",
       season: "",
     },
-    {
+    { id:"",
       name: "Trincomalee Tour",
       imgUrl: "https://i.imgur.com/xXUx8d1.jpg",
       description: "Jaffna market and city",
