@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import WhatsAppIcon from "@/components/whatsAppIcon";
+import { BooleanProvider } from "@/context/boolcontext";
+import Enquirenow from "@/components/enquire_now";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+      <BooleanProvider>{children}</BooleanProvider>
         <WhatsAppIcon />
+        {/* <Enquirenow/> */}
       </body>
     </html>
   );

@@ -19,38 +19,34 @@ export default function Home() {
 
       <main className=" bg-white  ">
         <section className="">
-          <nav className="z-20 w-screen lg:absolute">
+          <nav className="z-20 w-full lg:absolute">
             <Navbar />
           </nav>
-          <div className="relative w-screen h-full">
-            <div className="relative w-screen h-full">
-              <div className="relative w-screen h-full">
-                <img
-                  src="https://i.imgur.com/jMFbSSb.jpg"
-                  className="w-screen lg:h-screen h-[50vh] object-cover"
-                  alt="Background"
-                />
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
-                    About Us
-                  </div>
-                  <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
-                    <Link href="/">
-                      {" "}
-                      <MdHome color="" size={30} className="mr-2" />{" "}
-                    </Link>
-                    <span>
-                      {" "}
-                      <Link href="/">Home</Link>
-                    </span>
 
-                    <IoIosArrowForward color="" size={30} className="mx-2" />
-                    <span>About Us</span>
-                  </div>
-                </div>
-              </div>
+          <img
+            src="https://i.imgur.com/jMFbSSb.jpg"
+            className="w-screen lg:h-screen h-[50vh] object-cover"
+            alt="Background"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
+              About Us
+            </div>
+            <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
+              <Link href="/">
+                {" "}
+                <MdHome color="" size={30} className="mr-2" />{" "}
+              </Link>
+              <span>
+                {" "}
+                <Link href="/">Home</Link>
+              </span>
+
+              <IoIosArrowForward color="" size={30} className="mx-2" />
+              <span>About Us</span>
             </div>
           </div>
+
           <div
             className="relative flex items-center justify-center bg-cover bg-center"
             style={{

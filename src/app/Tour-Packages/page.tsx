@@ -2,10 +2,10 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
 import Head from "next/head";
 import Link from "next/link";
-import { IoIosArrowForward, IoMdDoneAll } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import TourPackage from "../Day-Excursions/tourpackage";
-import { tourPackages } from "@/database/tourpackages"; 
+import { tourPackages } from "@/database/tourpackages";
+import TourPackage from "./tourpackageCard";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
@@ -28,7 +28,7 @@ export default function Home() {
                   alt="Background"
                 />
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
+                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4 mx-auto">
                     Tour Packages in Sri Lanka
                   </div>
                   <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
@@ -70,16 +70,8 @@ export default function Home() {
           </div>
           <div className="text-4xl lg:px-16 px-5 mb-5 text-center font-sans"></div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
-          {tourPackages.map((packageInfo, index) => (
-              <TourPackage
-                key={index}
-                name={packageInfo.name}
-                imgUrl={packageInfo.imgUrl}
-                description={packageInfo.description}
-                numOfDays={packageInfo.numOfDays}
-                numOfPeople={packageInfo.numOfPeople}
-                season={packageInfo.season}
-              />
+            {tourPackages.map((packageInfo, index) => (
+              <TourPackage id={packageInfo.id} />
             ))}
           </div>
           <div className=" h-10"></div>

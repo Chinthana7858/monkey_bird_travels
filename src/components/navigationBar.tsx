@@ -1,7 +1,8 @@
 "use client";
+import { useBooleanContext } from "@/context/boolcontext";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaInstagramSquare, FaWhatsapp, FaYoutubeSquare } from "react-icons/fa";
 import { FaSquareTwitter, FaSquareXTwitter } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -10,6 +11,10 @@ import { IoIosArrowDown, IoIosArrowUp, IoIosCall } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 
 export default function Navbar() {
+  const { booleanState, toggleBooleanState } = useBooleanContext();
+
+
+  
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [showOurServises, setShowOurServices] = useState(false);
   const [showDiscoverSL, setShowDiscoverSL] = useState(false);
@@ -217,7 +222,7 @@ export default function Navbar() {
               href="/Contact-Us" className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
               Contact Us
             </ Link>
-            <div className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+            <div className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0" onClick={toggleBooleanState}>
               Enquire Now
             </div>
           </div>
