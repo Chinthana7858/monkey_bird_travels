@@ -7,7 +7,7 @@ import Navbar from "@/components/navigationBar";
 import Review from "@/components/review";
 import ReviewComponent from "@/components/reviewcomponent";
 import Head from "next/head";
-//import TourPackage from "./Tour-Packages/tourpackageCard";
+import TourPackage from "./Tour-Packages/tourpackageCard";
 import { tourPackages } from "@/database/tourpackages";
 
 export default function Home() {
@@ -44,8 +44,8 @@ export default function Home() {
                 customized to meet your specific needs. Whether you’re looking
                 for a leisurely vacation or an adventure-filled getaway, our
                 team of experts will help you make the most of your time in Sri
-                Lanka. We hope you’ll consider Monkey Bird Travels – Private Driver in
-                Sri Lanka when planning your next trip to Sri Lanka.
+                Lanka. We hope you’ll consider Monkey Bird Travels – Private
+                Driver in Sri Lanka when planning your next trip to Sri Lanka.
               </div>
               <div className="text-blue-600 px-5 lg:px-16  font-medium p-3 flex-1 lg:flex text-center">
                 <div>
@@ -71,11 +71,11 @@ export default function Home() {
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Our most popular Tour Packages
           </div>
-          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
-          {tourPackages.map((packageInfo) => (
-    <TourPackage key={packageInfo.id} id={packageInfo.id} />
-  ))}
-          </div> */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
+            {tourPackages.map((packageInfo) => (
+              <TourPackage key={packageInfo.id} id={packageInfo.id} />
+            ))}
+          </div>
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Popular destinations
           </div>
