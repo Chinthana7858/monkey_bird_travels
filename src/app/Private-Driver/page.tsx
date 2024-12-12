@@ -1,17 +1,12 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
-import ContactSection, {
+import  {
   ContactDetails,
-  QuickContact,
 } from "@/components/quickcontact";
-import ReviewComponent from "@/components/reviewcomponent";
-import VehicleComponent from "@/app/Hire-A-Car/vehiclecomponent";
 import Head from "next/head";
 import Link from "next/link";
 import { IoIosArrowForward, IoMdDoneAll } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import { FaCheckCircle } from "react-icons/fa";
-import TourPackage from "@/components/tourPackage";
 import Driver from "./driver";
 
 export default function Home() {
