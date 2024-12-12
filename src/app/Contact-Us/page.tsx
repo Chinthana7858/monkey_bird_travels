@@ -1,13 +1,12 @@
 "use client";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
-import ContactSection, { QuickContact } from "@/components/quickcontact";
+import  { QuickContact } from "@/components/quickcontact";
 import ReviewComponent from "@/components/reviewcomponent";
 import Head from "next/head";
 import Link from "next/link";
 import { IoIosArrowForward, IoMdMailUnread } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import { blog } from "@/database/blog";
 import {
   FaFacebookSquare,
   FaHome,

@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import WhatsAppIcon from "@/components/whatsAppIcon";
 import { BooleanProvider } from "@/context/boolcontext";
-import Enquirenow from "@/components/enquire_now";
 
 const inter = Inter({ subsets: ["latin"] });
 

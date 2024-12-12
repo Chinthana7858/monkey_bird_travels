@@ -17,9 +17,9 @@ export default function VehicleComponent({
       <img
         src={imgUrl}
         alt={title}
-        className=" w-full lg:w-1/3 basis-1/3 object-cover"
+        className=" w-full lg:w-1/2 basis-1/2 object-cover"
       />
-      <div className="p-6 flex-1 flex flex-col justify-center basis-1/3">
+      <div className="p-6 flex-1 flex flex-col justify-center basis-1/2">
         <h2 className="text-xl font-bold mb-2 text-gray-800 text-center">
           {title}
         </h2>
@@ -31,11 +31,7 @@ export default function VehicleComponent({
           ))}
         </ul>
       </div>
-      <div className="flex items-center justify-center ">
-        <button className="py-2 mx-2 px-2 bg-custom-primaryblue text-white font-semibold rounded-md shadow-sm hover:bg-custom-secondaryblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-primaryblue m-2">
-          Book This
-        </button>
-      </div>
+   /
     </div>
   );
 }

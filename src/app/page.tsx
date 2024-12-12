@@ -1,14 +1,12 @@
-import BooleanToggle from "@/components/BooleanToggle";
+
 import Slider1 from "@/components/ImageCarousel";
-import ReviewCarousel from "@/components/ReviewCarousel";
 import Destination from "@/components/destination";
-import Enquirenow from "@/components/enquire_now";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
-import Review from "@/components/review";
 import ReviewComponent from "@/components/reviewcomponent";
 import Head from "next/head";
 import TourPackage from "./Tour-Packages/tourpackageCard";
+import { tourPackages } from "@/database/tourpackages";
 
 export default function Home() {
   return (
@@ -31,21 +29,21 @@ export default function Home() {
             <div className=" basis-1/2">
               <div className=" text-3xl lg:px-16 px-5 font-semibold text-slate-800">
                 {" "}
-                Explore amazing Sri Lanka with Lak Dream Travel Destination
+                Explore amazing Sri Lanka with Monkey Bird Travels
               </div>
               <div className=" text-slate-600 px-5 lg:px-16  font-medium p-3">
                 Imagine exploring the beautiful country of Sri Lanka, touring
                 ancient temples and Buddhist ruins, and enjoying the stunning
                 beaches—all without having to worry about a thing. That’s what
-                Chamila Tours – Private Driver in Sri Lanka offers: an
+                Monkey Bird Travels – Private Driver in Sri Lanka offers: an
                 all-inclusive, hassle-free experience that will let you see the
                 best of Sri Lanka. We understand that every traveler is
                 different, so we offer a variety of tour packages that can be
                 customized to meet your specific needs. Whether you’re looking
                 for a leisurely vacation or an adventure-filled getaway, our
                 team of experts will help you make the most of your time in Sri
-                Lanka. We hope you’ll consider Chamila Tours – Private Driver in
-                Sri Lanka when planning your next trip to Sri Lanka.
+                Lanka. We hope you’ll consider Monkey Bird Travels – Private
+                Driver in Sri Lanka when planning your next trip to Sri Lanka.
               </div>
               <div className="text-blue-600 px-5 lg:px-16  font-medium p-3 flex-1 lg:flex text-center">
                 <div>
@@ -63,7 +61,7 @@ export default function Home() {
               </div>
             </div>
             <div className=" basis-1/2">
-              <img src="https://i.imgur.com/FLN1VBo.jpg" />
+              <img src="https://i.imgur.com/qB77Ode.jpg" />
             </div>
           </div>
         </section>
@@ -72,9 +70,9 @@ export default function Home() {
             Our most popular Tour Packages
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
-            <TourPackage id={"1"} />
-            <TourPackage id={"2"} />
-            <TourPackage id={"3"} />
+            {tourPackages.map((packageInfo) => (
+              <TourPackage key={packageInfo.id} id={packageInfo.id} />
+            ))}
           </div>
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Popular destinations
@@ -83,20 +81,24 @@ export default function Home() {
             <Destination
               title="Slit fisherman"
               imgUrl="https://i.imgur.com/Ypjeksa.jpg"
+              key={1}
             />
             <Destination
               title="Jaffna"
               imgUrl="https://i.imgur.com/ERfq4i2.jpg"
+              key={2}
             />
 
             <Destination
               title="Nuwara Eliya"
               imgUrl="https://i.imgur.com/UYrJ2L0.jpg"
+              key={3}
             />
 
             <Destination
               title="Kandy"
               imgUrl="https://i.imgur.com/oke6pTe.jpg"
+              key={4}
             />
           </div>
           <ReviewComponent />

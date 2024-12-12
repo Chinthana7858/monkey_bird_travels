@@ -71,7 +71,7 @@ export default function Home() {
           <div className="text-4xl lg:px-16 px-5 mb-5 text-center font-sans"></div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
             {tourPackages.map((packageInfo, index) => (
-              <TourPackage id={packageInfo.id} />
+              <TourPackage id={packageInfo.id} key={packageInfo.id} />
             ))}
           </div>
           <div className=" h-10"></div>
