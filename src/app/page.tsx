@@ -71,9 +71,9 @@ export default function Home() {
             Our most popular Tour Packages
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
-            <TourPackage id={"1"} />
-            <TourPackage id={"2"} />
-            <TourPackage id={"3"} />
+            <TourPackage id={"1"} key={1}/>
+            <TourPackage id={"2"} key={2}/>
+            <TourPackage id={"3"} key={3}/>
           </div>
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Popular destinations
