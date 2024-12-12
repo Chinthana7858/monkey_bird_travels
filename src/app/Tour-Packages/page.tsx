@@ -72,7 +72,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
             {tourPackages.map((packageInfo, index) => (
            
-              <TourPackage id={packageInfo.id} />
+              <TourPackage id={packageInfo.id}key={index} />
             ))}
           </div>
           <div className=" h-10"></div>
