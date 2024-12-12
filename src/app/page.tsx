@@ -82,20 +82,24 @@ export default function Home() {
             <Destination
               title="Slit fisherman"
               imgUrl="https://i.imgur.com/Ypjeksa.jpg"
+              key={1}
             />
             <Destination
               title="Jaffna"
               imgUrl="https://i.imgur.com/ERfq4i2.jpg"
+              key={2}
             />
 
             <Destination
               title="Nuwara Eliya"
               imgUrl="https://i.imgur.com/UYrJ2L0.jpg"
+              key={3}
             />
 
             <Destination
               title="Kandy"
               imgUrl="https://i.imgur.com/oke6pTe.jpg"
+              key={4}
             />
           </div>
           <ReviewComponent />
