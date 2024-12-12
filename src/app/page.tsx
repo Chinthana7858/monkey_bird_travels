@@ -7,7 +7,7 @@ import Navbar from "@/components/navigationBar";
 import Review from "@/components/review";
 import ReviewComponent from "@/components/reviewcomponent";
 import Head from "next/head";
-import TourPackage from "./Tour-Packages/tourpackageCard";
+//import TourPackage from "./Tour-Packages/tourpackageCard";
 import { tourPackages } from "@/database/tourpackages";
 
 export default function Home() {

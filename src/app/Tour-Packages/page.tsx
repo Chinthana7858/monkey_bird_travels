@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdHome } from "react-icons/md";
 import { tourPackages } from "@/database/tourpackages";
-import TourPackage from "./tourpackageCard";
+//import TourPackage from "./tourpackageCard";
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">

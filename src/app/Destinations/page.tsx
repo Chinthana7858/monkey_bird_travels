@@ -6,7 +6,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdHome } from "react-icons/md";
-import DestinationCard from "./destinationcard";
+//import DestinationCard from "./destinationcard";
 import { destinations } from "@/database/destinations"; 
 
 export default function Home() {
@@ -76,13 +76,13 @@ export default function Home() {
           </div>
     
           <div>
-          <div className="pt-2 columns-2 md:columns-3 lg:columns-3 mx-2">
+          {/* <div className="pt-2 columns-2 md:columns-3 lg:columns-3 mx-2">
             {destinations.map((destination, index) => (
               <div key={index} className="relative mb-4 break-inside-avoid">
                 <DestinationCard title={destination.title} imgUrl={destination.imgUrl} />
               </div>
             ))}
-          </div>
+          </div> */}
           </div>
           <div>
             <ContactSection />
