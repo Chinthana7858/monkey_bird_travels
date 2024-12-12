@@ -69,11 +69,11 @@ export default function Home() {
             </div>
           </div>
           <div className="text-4xl lg:px-16 px-5 mb-5 text-center font-sans"></div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
             {tourPackages.map((packageInfo) => (
               <TourPackage id={packageInfo.id} key={packageInfo.id} />
             ))}
-          </div>
+          </div> */}
           <div className=" h-10"></div>
         </section>
         <footer>
