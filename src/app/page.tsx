@@ -71,11 +71,11 @@ export default function Home() {
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Our most popular Tour Packages
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
           {tourPackages.map((packageInfo) => (
     <TourPackage key={packageInfo.id} id={packageInfo.id} />
   ))}
-          </div>
+          </div> */}
           <div className=" text-3xl lg:px-16 px-5 font-semibold text-white text-center p-3 bg-red-800 rounded-lg m-4">
             Popular destinations
           </div>
