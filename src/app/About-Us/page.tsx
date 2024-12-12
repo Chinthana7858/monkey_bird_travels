@@ -1,5 +1,4 @@
 "use client";
-import Slider1 from "@/components/ImageCarousel";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
 import ReviewComponent from "@/components/reviewcomponent";

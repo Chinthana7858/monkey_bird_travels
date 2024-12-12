@@ -1,10 +1,9 @@
 "use client";
 import { useBooleanContext } from "@/context/boolcontext";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { FaInstagramSquare, FaWhatsapp, FaYoutubeSquare } from "react-icons/fa";
-import { FaSquareTwitter, FaSquareXTwitter } from "react-icons/fa6";
+import {  FaSquareXTwitter } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImFacebook2 } from "react-icons/im";
 import { IoIosArrowDown, IoIosArrowUp, IoIosCall } from "react-icons/io";

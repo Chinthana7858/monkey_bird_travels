@@ -1,10 +1,8 @@
-import BooleanToggle from "@/components/BooleanToggle";
+
 import Slider1 from "@/components/ImageCarousel";
-import ReviewCarousel from "@/components/ReviewCarousel";
 import Destination from "@/components/destination";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
-import Review from "@/components/review";
 import ReviewComponent from "@/components/reviewcomponent";
 import Head from "next/head";
 import TourPackage from "./Tour-Packages/tourpackageCard";
