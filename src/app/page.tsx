@@ -2,7 +2,6 @@ import BooleanToggle from "@/components/BooleanToggle";
 import Slider1 from "@/components/ImageCarousel";
 import ReviewCarousel from "@/components/ReviewCarousel";
 import Destination from "@/components/destination";
-import Enquirenow from "@/components/enquire_now";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navigationBar";
 import Review from "@/components/review";
@@ -31,20 +30,20 @@ export default function Home() {
             <div className=" basis-1/2">
               <div className=" text-3xl lg:px-16 px-5 font-semibold text-slate-800">
                 {" "}
-                Explore amazing Sri Lanka with Lak Dream Travel Destination
+                Explore amazing Sri Lanka with Monkey Bird Travels
               </div>
               <div className=" text-slate-600 px-5 lg:px-16  font-medium p-3">
                 Imagine exploring the beautiful country of Sri Lanka, touring
                 ancient temples and Buddhist ruins, and enjoying the stunning
                 beaches—all without having to worry about a thing. That’s what
-                Chamila Tours – Private Driver in Sri Lanka offers: an
+                Monkey Bird Travels – Private Driver in Sri Lanka offers: an
                 all-inclusive, hassle-free experience that will let you see the
                 best of Sri Lanka. We understand that every traveler is
                 different, so we offer a variety of tour packages that can be
                 customized to meet your specific needs. Whether you’re looking
                 for a leisurely vacation or an adventure-filled getaway, our
                 team of experts will help you make the most of your time in Sri
-                Lanka. We hope you’ll consider Chamila Tours – Private Driver in
+                Lanka. We hope you’ll consider Monkey Bird Travels – Private Driver in
                 Sri Lanka when planning your next trip to Sri Lanka.
               </div>
               <div className="text-blue-600 px-5 lg:px-16  font-medium p-3 flex-1 lg:flex text-center">
@@ -63,7 +62,7 @@ export default function Home() {
               </div>
             </div>
             <div className=" basis-1/2">
-              <img src="https://i.imgur.com/FLN1VBo.jpg" />
+              <img src="https://i.imgur.com/qB77Ode.jpg" />
             </div>
           </div>
         </section>

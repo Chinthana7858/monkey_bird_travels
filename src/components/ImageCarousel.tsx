@@ -1,18 +1,19 @@
 "use client";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
 const DATA = [
   {
-    image: "https://i.imgur.com/dpGXe2b.jpg",
-    maintitle: "World`s most beautiful train trip?",
-    subtitle: "NanuOya to Ella",
+    image: "https://i.imgur.com/HMVEr7F.jpg",
+    maintitle: "Welcome to Monkey Bird Travels",
+    subtitle: "Sri Lanka",
   },
   {
-    image: "https://i.imgur.com/ERfq4i2.jpg",
-    maintitle: "Welcome to",
-    subtitle: "Sri Lanka Lak Dream Travel Destination",
+    image: "https://i.imgur.com/ThqdDyn.jpg",
+    maintitle: "Wonder of Asia",
+    subtitle: "Sri Lanka",
   },
 ];
 
@@ -56,8 +57,12 @@ function Slider1() {
           <p className="lg:text-3xl text-xl">{DATA[currentIndex]?.subtitle}</p>
           <div className=" flex text-center justify-center my-[5vh]">
             {" "}
-            <button className=" m-5 border-2 border-white bg-blue-500 py-1 px-2 hover:bg-blue-600">Private Driver</button> 
+            <Link href="/Private-Driver">
+            <button className=" m-5 border-2 border-white bg-blue-500 py-1 px-2 hover:bg-blue-600">Private Driver</button>
+            </Link> 
+            <Link href="/Tour-Packages">
             <button className=" m-5 border-2 border-white bg-red-500 py-1 px-2 hover:bg-red-600">Tour packages</button>
+            </Link> 
           </div>
         </div>
       </div>

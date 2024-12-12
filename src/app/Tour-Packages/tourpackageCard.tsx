@@ -1,4 +1,5 @@
 import { tourPackages } from "@/database/tourpackages";
+import Link from "next/link";
 import { BsPeopleFill } from "react-icons/bs";
 import { FaCalendarDay } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
@@ -42,10 +43,12 @@ export default function TourPackage({ id }: TourPackageProps) {
             <IoLocation size={20} /> {description}
           </div>
         </div>
+        <Link href={`/Tour-Packages/${id}`}>
         <div className="text-white font-medium p-3 bg-red-950 flex justify-between cursor-pointer">
           Explore
           <MdArrowForwardIos size={20} />
         </div>
+        </Link>
       </div>
     </div>
   );

@@ -183,9 +183,10 @@ export default function TourPackagePage() {
                 </div>
                 <GoogleMapComponent
                   src={
-                    "https://www.google.com/maps/d/embed?mid=1OdJ1JI8f7MFJPJey5-KahbxVWp84wS0&ehbc=2E312F"
+                    tourPackage.mapsrc
                   }
                 />
+                
               </div>
             </div>
             <div className=" w-[30vw]">

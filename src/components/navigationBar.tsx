@@ -13,8 +13,6 @@ import { IoMail } from "react-icons/io5";
 export default function Navbar() {
   const { booleanState, toggleBooleanState } = useBooleanContext();
 
-
-  
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [showOurServises, setShowOurServices] = useState(false);
   const [showDiscoverSL, setShowDiscoverSL] = useState(false);
@@ -83,14 +81,14 @@ export default function Navbar() {
                 }}
               />
             </div>
-            <div className=""  style={{ color: '#E1306C' }} >
+            <div className="" style={{ color: "#E1306C" }}>
               <FaInstagramSquare
                 size={50}
                 color=""
                 className=" hover:scale-110 cursor-pointer"
               />
             </div>
-            <div className=""  style={{ color: '#FF0000' }}>
+            <div className="" style={{ color: "#FF0000" }}>
               <FaYoutubeSquare
                 size={50}
                 color=""
@@ -187,44 +185,24 @@ export default function Navbar() {
 
           {/* Third row */}
           <div className="flex justify-between w-full">
-            <div className="relative w-[40%]">
-              <div
-                className="w-full bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0 h-[7vh]"
-                onClick={() => toggleDropdown2()}
-              >
-                Discover Sri Lanka
-                {isDropdownOpen2 ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </div>
-              {isDropdownOpen2 && (
-                <div className="absolute top-full left-0 w-full bg-custom-primaryblue z-10">
-                  <a
-                    href="Destinations"
-                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
-                  >
-                    Destinations
-                  </a>
-                  <a
-                    href="Things-To-Do"
-                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
-                  >
-                    Things to do
-                  </a>
-                  <a
-                    href="Blogs"
-                    className="block cursor-pointer hover:bg-custom-secondaryblue p-2 text-center"
-                  >
-                    Blog
-                  </a>
-                </div>
-              )}
-            </div>
             <Link
-              href="/Contact-Us" className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0">
+              href="/Destinations"
+              className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0"
+            >
+              Destinations
+            </Link>
+            <Link
+              href="/Things-To-Do"
+              className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0"
+            >
+              Things to do
+            </Link>
+            <Link
+              href="/Contact-Us"
+              className="w-[33.33%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0"
+            >
               Contact Us
-            </ Link>
-            <div className="w-[30%] bg-custom-primaryblue flex items-center justify-center cursor-pointer hover:bg-custom-secondaryblue border hover:border-0" onClick={toggleBooleanState}>
-              Enquire Now
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -303,45 +281,24 @@ export default function Navbar() {
                   Tailor Made Tours
                 </li>
               </Link>
-              <li
-                className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium"
-                onClick={() => {
-                  toggleDiscoverSL();
-                }}
-              >
-                <div className=" flex">
-                  {" "}
-                  Discover Sri Lanka{" "}
-                  {showDiscoverSL ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                </div>
-              </li>
-              {showDiscoverSL && (
-                <div>
-                  <Link href="/Destinations">
-                    <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                      Destinations
-                    </li>
-                  </Link>
-                  <Link href="/Things-To-Do">
-                    <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                      Things to do
-                    </li>
-                  </Link>
-                  <Link href="/Blogs">
-                  <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                    Blog
-                  </li>
-                  </Link>
-                </div>
-              )}
-                <Link href="/Contact-Us">
-              <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                Contact Us
-              </li>
+
+              <Link href="/Destinations">
+                <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                  Destinations
+                </li>
               </Link>
-              <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
-                Enquire Now
-              </li>
+              
+              <Link href="/Things-To-Do">
+                <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                  Things to do
+                </li>
+              </Link>
+
+              <Link href="/Contact-Us">
+                <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
+                  Contact Us
+                </li>
+              </Link>
             </ul>
           </div>
         )}
