@@ -6,7 +6,7 @@ import { RxDotFilled } from "react-icons/rx";
 
 const DATA = [
   {
-    image: "https://i.imgur.com/HMVEr7F.jpg",
+    image: "https://i.imgur.com/kGdNndW.jpg",
     maintitle: "Welcome to Monkey Bird Travels",
     subtitle: "Sri Lanka",
   },
