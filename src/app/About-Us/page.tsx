@@ -23,7 +23,7 @@ export default function Home() {
           </nav>
 
           <img
-            src="https://i.imgur.com/jMFbSSb.jpg"
+            src="https://i.imgur.com/kGdNndW.jpg"
             className="w-screen lg:h-screen h-[50vh] object-cover"
             alt="Background"
           />

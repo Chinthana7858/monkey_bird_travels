@@ -1,7 +1,7 @@
 export const vehicles = [
   {
     title: "Sedan Car",
-    imgUrl: "https://i.imgur.com/a4gRSWP.jpg",
+    imgUrl: "https://i.imgur.com/fjR7ZQC.jpg",
     facts: [
       "Models: Toyota Corolla or Honda Civic",
       "Comfortable for up to 3 passengers with room for 2 medium suitcases",
@@ -11,7 +11,7 @@ export const vehicles = [
   },
   {
     title: "Luxury SUV",
-    imgUrl: "https://i.imgur.com/a4gRSWP.jpg",
+    imgUrl: "https://i.imgur.com/Gn9CApX.jpg",
     facts: [
       "Models: Toyota Prado or Mitsubishi Pajero",
       "Spacious interior for up to 5 passengers and ample luggage space",
@@ -21,7 +21,7 @@ export const vehicles = [
   },
   {
     title: "Mini Van",
-    imgUrl: "https://i.imgur.com/a4gRSWP.jpg",
+    imgUrl: "https://i.imgur.com/hpgdpy0.jpg",
     facts: [
       "Models: Toyota HiAce or Nissan Caravan",
       "Comfortable seating for up to 10 passengers with ample baggage space",

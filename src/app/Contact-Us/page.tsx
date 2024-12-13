@@ -42,7 +42,7 @@ export default function Home() {
             <div className="relative w-screen h-full">
               <div className="relative w-screen h-full">
                 <img
-                  src="https://i.imgur.com/QdhxF3S.jpg"
+                  src="https://i.imgur.com/kGdNndW.jpg"
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
@@ -116,7 +116,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className=" flex-col pt-4">
-                  <div className=" text-slate-700 px-11 lg:text-4xl md:text-3xl text-2xl font-medium">
+                  <div className=" text-slate-700 px-11 lg:text-3xl md:text-2xl text-xl font-medium">
                     Social Networks
                   </div>
                   <div className=" text-slate-700 px-10 flex">

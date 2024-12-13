@@ -2,7 +2,7 @@ export const tourPackages = [
   {
     id: "1",
     name: "Jaffna Heritage Tour",
-    imgUrl: "https://i.imgur.com/wOgu2Xj.jpg",
+    imgUrl: "https://i.imgur.com/4JX0SVL.jpg",
     description: "Immerse yourself in the rich culture and history of Jaffna.",
     numOfDays: "Four",
     numOfNights: "Three",
@@ -48,7 +48,7 @@ export const tourPackages = [
   {
     id: "2",
     name: "Kandy Cultural Getaway",
-    imgUrl: "https://i.imgur.com/FqojsAR.jpg",
+    imgUrl: "https://i.imgur.com/0tkkT92.jpg",
     description: "Discover the charm of Kandy and its cultural landmarks.",
     numOfDays: "Two",
     numOfNights: "One",
@@ -84,7 +84,7 @@ export const tourPackages = [
   {
     id: "3",
     name: "Sigiriya & Dambulla Exploration",
-    imgUrl: "https://i.imgur.com/dpGXe2b.jpg",
+    imgUrl: "https://i.imgur.com/Vzw5Qy7.jpg",
     description: "Explore Sigiriya and Dambulla's historical treasures.",
     numOfDays: "Two",
     numOfNights: "One",
@@ -120,7 +120,7 @@ export const tourPackages = [
   {
     id: "4",
     name: "Ella Scenic Escape",
-    imgUrl: "https://i.imgur.com/dpGXe2b.jpg", // Replace with an appropriate image URL
+    imgUrl: "https://i.imgur.com/t6HV5AY.jpg", 
     description: "Discover the breathtaking views and trails of Ella.",
     numOfDays: "Three",
     numOfNights: "Two",
@@ -161,7 +161,7 @@ export const tourPackages = [
   {
     id: "5",
     name: "Galle and Southern Coast",
-    imgUrl: "https://i.imgur.com/dpGXe2b.jpg", // Replace with an appropriate image URL
+    imgUrl: "https://i.imgur.com/W16VZ2H.jpg", 
     description: "Explore the colonial charm of Galle and unwind on the southern beaches.",
     numOfDays: "Two",
     numOfNights: "One",
@@ -197,7 +197,7 @@ export const tourPackages = [
   {
     id: "6",
     name: "Yala Safari Adventure",
-    imgUrl: "https://i.imgur.com/dpGXe2b.jpg", // Replace with an appropriate image URL
+    imgUrl: "https://i.imgur.com/jDkzpyM.jpg", 
     description: "Embark on an unforgettable wildlife safari at Yala National Park.",
     numOfDays: "Two",
     numOfNights: "One",
