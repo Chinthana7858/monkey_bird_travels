@@ -178,7 +178,7 @@ export function ContactDetails() {
     <div
       className="w-[90vw] lg:w-[30vw] mx-auto mt-3 p-6 space-y-4 my-4 text-white rounded-xl shadow-lg relative"
       style={{
-        backgroundImage: "url('https://i.imgur.com/ueDgdLs.jpg')",
+        backgroundImage: "url('https://i.imgur.com/Vzw5Qy7.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
