@@ -43,7 +43,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex-col  lg:visible collapse h-0 mb-3">
+      <div className="flex-col  lg:visible collapse h-0 mb-3 w-0 md:w-full">
         <div className="basis-2/3 bg-white text-black h-[10vh] flex justify-between font-semibold">
           <div className="items-center justify-center flex border-2 w-full">
             <img src="/logo.png" alt="" className=" scale-50 cursor-pointer" />

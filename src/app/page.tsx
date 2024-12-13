@@ -23,7 +23,6 @@ export default function Home() {
         <section className="">
           <nav className="z-20 w-full lg:absolute">
             <Navbar />
-            {/* <BooleanToggle /> */}
           </nav>
           <Slider1 />
         </section>

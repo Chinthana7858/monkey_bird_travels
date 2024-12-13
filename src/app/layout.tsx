@@ -22,7 +22,6 @@ export default function RootLayout({
       <body className={inter.className}>
       <BooleanProvider>{children}</BooleanProvider>
         <WhatsAppIcon />
-        {/* <Enquirenow/> */}
       </body>
     </html>
   );
