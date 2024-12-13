@@ -68,26 +68,26 @@ export default function Home() {
                 For over a decade, Monkeybird Travels has been crafting
                 unforgettable experiences for travelers from across the globe.
                 With a perfect balance of affordability, comfort, and safety, we
-                pride ourselves on delivering world-class tours that showcase
-                the very best of Sri Lanka. Our team is committed to staying
-                updated with the latest health and safety protocols to ensure
-                your journey is as enjoyable as it is secure. At Monkeybird
-                Travels, our highly skilled and knowledgeable drivers are more
-                than just chauffeurs—they are your guides through Sri Lanka’s
-                rich history, breathtaking geography, and vibrant culture.
-                Embark on a journey to uncover the island’s hidden treasures.
-                Wander through historical landmarks, immerse yourself in the
-                diverse wildlife, and savor the unmatched beauty of golden
-                beaches and lush landscapes. From the exquisite cuisine to the
-                heartwarming smiles of the locals, Sri Lanka offers a travel
-                experience like no other. At Monkeybird Travels, we don’t just
-                offer trips; we create memories that last a lifetime. Whether
-                you’re exploring ancient ruins, marveling at the intricate
-                beauty of Sri Lanka’s temples, or relaxing on its serene shores,
-                your adventure will be one to treasure forever. Let us guide you
-                through the wonders of the "Land of Smiles." Pack your bags, and
-                let Monkeybird Travels turn your dream vacation into reality. We
-                can’t wait to welcome you!
+                take pride in delivering world-class tours that showcase the
+                very best of Sri Lanka. Our team is dedicated to staying updated
+                with the latest health and safety protocols, ensuring that your
+                journey is as enjoyable as it is secure. At Monkeybird Travels,
+                our highly skilled and knowledgeable drivers are more than just
+                chauffeurs—they are your guides through Sri Lanka's rich
+                history, breathtaking geography, and vibrant culture. Embark on
+                a journey to uncover the island's hidden treasures. Wander
+                through historical landmarks, immerse yourself in diverse
+                wildlife, and savor the unmatched beauty of golden beaches and
+                lush landscapes. From the exquisite cuisine to the heartwarming
+                smiles of the locals, Sri Lanka offers a travel experience like
+                no other. At Monkeybird Travels, we don't just offer trips; we
+                create memories that last a lifetime. Whether you're exploring
+                ancient ruins, marveling at the intricate beauty of Sri Lanka's
+                temples, or relaxing on its serene shores, your adventure will
+                be one to treasure forever. Let us guide you through the wonders
+                of the "Land of Smiles." Pack your bags and let Monkeybird
+                Travels turn your dream vacation into reality. We can't wait to
+                welcome you!
               </div>
             </div>
           </div>
