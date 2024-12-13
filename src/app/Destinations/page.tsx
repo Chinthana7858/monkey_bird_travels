@@ -60,14 +60,14 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-slate-600 px-5 lg:px-16 font-medium">
-                Sri Lanka is a popular tourist destination for a reason: it’s
+                Sri Lanka is a popular tourist destination for a reason: it is
                 gorgeous. This tiny island nation has a huge range of diverse
                 landscapes to offer, from mountains and cliffs to waterfalls and
-                beaches. And if that’s not enough, there are also temples. If
-                you’re looking for beautiful places to visit in Sri Lanka, look
-                no further. We’ve got a list of the top tourist attractions in
+                beaches. And if that is not enough, there are also temples. If
+                you are looking for beautiful places to visit in Sri Lanka, look
+                no further. We have got a list of the top tourist attractions in
                 Sri Lanka (Sri Lanka tourist places), along with tips on the
-                best way to experience them. So, whether you’re looking for
+                best way to experience them. So, whether you are looking for
                 culture, adventure, or just some serious relaxation, Sri Lanka
                 has something for you. SO, here are the best Sri Lanka Tourist
                 Places.

@@ -54,7 +54,7 @@ export default function Home() {
                 {" "}
                 Looking for the best tour packages in Sri Lanka? Look no
                 further! At our Company, we offer a wide range of packages to
-                choose from, perfect for all kinds of travelers. Whether you’re
+                choose from, perfect for all kinds of travelers. Whether you are
                 a couple looking for a romantic getaway, a family looking for
                 some fun in the sun, or a group of friends wanting to explore
                 everything this beautiful country has to offer, we have the

@@ -72,12 +72,12 @@ export default function Home() {
                   enjoyable. Whether you need a car for a day, a week, or even
                   longer, we offer flexible options tailored to your travel
                   plans. Choose from our wide range of vehicles, suitable for
-                  any budget and group size. Our drivers aren’t just
-                  chauffeurs—they’re your local guides, ready to help you plan
+                  any budget and group size. Our drivers are not just
+                  chauffeurs—they are your local guides, ready to help you plan
                   your trip and recommend the must-see destinations across Sri
                   Lanka. From historic landmarks to scenic beaches and hidden
-                  gems, we ensure you’ll have an unforgettable experience. If
-                  you’re looking for a convenient, safe, and personalized way to
+                  gems, we ensure you will have an unforgettable experience. If
+                  you are looking for a convenient, safe, and personalized way to
                   explore Sri Lanka, Monkeybird Travels is here to take care of
                   all your travel needs. Contact us today and embark on a
                   journey of discovery, comfort, and adventure!

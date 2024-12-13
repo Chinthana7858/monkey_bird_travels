@@ -61,16 +61,16 @@ export default function Home() {
               </div>
               <div className="text-slate-600 px-5 lg:px-16 font-medium">
                 Sri Lanka is a beautiful country with plenty to offer tourists.
-                If you’re looking for things to do in Sri Lanka (tourist
-                attractions in Sri Lanka), you won’t be disappointed. From
+                If you are looking for things to do in Sri Lanka (tourist
+                attractions in Sri Lanka), you won t be disappointed. From
                 sightseeing and wildlife spotting to adventure sports and
                 culture, Sri Lanka has something for everyone. The best place to
-                visit in Sri Lanka really depends on what you’re looking for. If
-                you’re a nature lover, the rainforest and national parks are
-                must-see. If you’re after some history and culture, the ancient
-                sites and temples are unmissable. And if you’re looking for some
+                visit in Sri Lanka really depends on what you are looking for. If
+                you are a nature lover, the rainforest and national parks are
+                must-see. If you are after some history and culture, the ancient
+                sites and temples are unmissable. And if you are looking for some
                 excitement and adventure, the surfing, diving and hiking are
-                top-notch. No matter what you choose, you’re sure to have an
+                top-notch. No matter what you choose, you are sure to have an
                 amazing time in Sri Lanka.
               </div>
             </div>
