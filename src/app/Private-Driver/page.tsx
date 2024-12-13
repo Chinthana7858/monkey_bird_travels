@@ -29,30 +29,13 @@ export default function Home() {
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
-                    Private driver
-                  </div>
-                  <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
-                    <Link href="/">
-                      {" "}
-                      <MdHome color="" size={30} className="mr-2" />{" "}
-                    </Link>
-                    <span>
-                      {" "}
-                      <Link href="/">Home</Link>
-                    </span>
-
-                    <IoIosArrowForward color="" size={30} className="mx-2" />
-                    <span>Private driver</span>
-                  </div>
-                </div>
+             
               </div>
             </div>
           </div>
           <div className="relative flex items-center justify-center bg-cover bg-center">
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
-              <div className="text-4xl lg:px-16 px-5 mb-5">
+              <div className="text-3xl md:text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-blue-600">
                 Your Trusted Private Driver Service
                 </div>
