@@ -1,247 +1,251 @@
-import React from 'react';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+
+interface FormData {
+  name: string;
+  email: string;
+  phone: string;
+  country: string;
+  arrivalDate: string;
+  departureDate: string;
+  adults: string;
+  kids: string;
+}
 
 export default function TailorMadeTours() {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    phone: "",
+    country: "",
+    arrivalDate: "",
+    departureDate: "",
+    adults: "",
+    kids: "",
+  });
+
+  const [isSending, setIsSending] = useState(false);
+  const [popupMessage, setPopupMessage] = useState("");
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSending(true);
+
+    const publicKey = "eIoVBimcTeq8Yvt1k";
+    const serviceID = "service_lod7buo";
+    const templateID = "template_in4jpco";
+
+    emailjs
+      .send(
+        serviceID,
+        templateID,
+        formData as unknown as Record<string, unknown>,
+        publicKey
+      )
+      .then(
+        () => {
+          setPopupMessage("Details sent successfully!");
+          setIsPopupVisible(true);
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            country: "",
+            arrivalDate: "",
+            departureDate: "",
+            adults: "",
+            kids: "",
+          });
+        },
+        () => {
+          setPopupMessage("Error sending email. Please try again.");
+          setIsPopupVisible(true);
+        }
+      )
+      .finally(() => setIsSending(false));
+  };
+
+  const closePopup = () => {
+    setIsPopupVisible(false);
+    setPopupMessage("");
+  };
+
   return (
     <div className="p-6 bg-white rounded-xl shadow-xl space-y-4 border-slate-600 text-gray-700 lg:w-[60vw] w-screen lg:mx-10 mx-auto">
-      <h2 className="text-2xl font-bold text-center text-white bg-custom-primaryblue">PERSONAL INFORMATION</h2>
-      <form className="space-y-4">
+      <h2 className="text-2xl font-bold text-center text-white bg-custom-primaryblue">
+        PERSONAL INFORMATION
+      </h2>
+      <form className="space-y-4" onSubmit={handleSubmit}>
         <div className="space-y-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name *</label>
+            <label
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Name *
+            </label>
             <input
               type="text"
               id="name"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
               required
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email *</label>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Email *
+            </label>
             <input
               type="email"
               id="email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
               required
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
+            <label
+              htmlFor="phone"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Phone Number
+            </label>
             <input
               type="text"
               id="phone"
               name="phone"
+              value={formData.phone}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
             />
           </div>
           <div>
-            <label htmlFor="country" className="block text-sm font-medium text-gray-700">Country *</label>
+            <label
+              htmlFor="country"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Country *
+            </label>
             <input
               type="text"
               id="country"
               name="country"
+              value={formData.country}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
               required
             />
           </div>
           <div>
-            <label htmlFor="arrival-date" className="block text-sm font-medium text-gray-700">Arrival Date</label>
+            <label
+              htmlFor="arrival-date"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Arrival Date
+            </label>
             <input
               type="date"
               id="arrival-date"
-              name="arrival-date"
+              name="arrivalDate"
+              value={formData.arrivalDate}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
             />
           </div>
           <div>
-            <label htmlFor="departure-date" className="block text-sm font-medium text-gray-700">Departure Date</label>
+            <label
+              htmlFor="departure-date"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Departure Date
+            </label>
             <input
               type="date"
               id="departure-date"
-              name="departure-date"
+              name="departureDate"
+              value={formData.departureDate}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
             />
           </div>
           <div>
-            <label htmlFor="adults" className="block text-sm font-medium text-gray-700">No of Adults *</label>
+            <label
+              htmlFor="adults"
+              className="block text-sm font-medium text-gray-700"
+            >
+              No of Adults *
+            </label>
             <input
               type="number"
               id="adults"
               name="adults"
+              value={formData.adults}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
               required
             />
           </div>
           <div>
-            <label htmlFor="kids" className="block text-sm font-medium text-gray-700">No of Kids</label>
+            <label
+              htmlFor="kids"
+              className="block text-sm font-medium text-gray-700"
+            >
+              No of Kids
+            </label>
             <input
               type="number"
               id="kids"
               name="kids"
+              value={formData.kids}
+              onChange={handleChange}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
             />
           </div>
         </div>
-
-        <fieldset className="space-y-2">
-          <legend className="text-sm font-semibold text-gray-700">TRAVEL PREFERENCE</legend>
-          <div className="grid grid-cols-2 gap-2">
-            <label className="flex items-center">
-              <input type="checkbox" name="nature" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Nature</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="wildlife" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Wildlife</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="adventure" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Adventure</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="cultural-heritage" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Cultural and Heritage</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="honeymoon" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Honeymoon</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="business" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Business</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="wellness" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Wellness</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="holiday-leisure" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Holiday - Leisure</span>
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset className="space-y-2">
-          <legend className="text-sm font-semibold text-gray-700">THINGS TO DO :</legend>
-          <div className="grid grid-cols-2 gap-2">
-            <label className="flex items-center">
-              <input type="checkbox" name="safari" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Safari</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="train-journey" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Train Journey</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="trekking" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Trekking</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="hiking" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Hiking</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="turtles-watching" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Turtles Watching</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="hot-air-ballooning" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Hot Air Ballooning</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="kite-surfing" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Kite Surfing</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="yoga" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Yoga</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="ayurveda" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Ayurveda</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="snorkeling-diving" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Snorkeling & Diving</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="dolphine-watching" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Dolphine Watching</span>
-            </label>
-            <label className="flex items-center">
-              <input type="checkbox" name="whales-watching" className="h-4 w-4 text-custom-primaryblue border-gray-300 rounded focus:ring-custom-primaryblue" />
-              <span className="ml-2">Whales Watching</span>
-            </label>
-          </div>
-        </fieldset>
-
-        <div className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Already have a Plan? Send us
-            </label>
-            <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-              <div className="space-y-1 text-center">
-                <svg
-                  className="mx-auto h-12 w-12 text-gray-400"
-                  stroke="currentColor"
-                  fill="none"
-                  viewBox="0 0 48 48"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M28 8H8a4 4 0 00-4 4v28a4 4 0 004 4h28a4 4 0 004-4V20l-12-12z"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M28 8v12h12"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <div className="flex text-sm text-gray-600">
-                  <label
-                    htmlFor="file-upload"
-                    className="relative cursor-pointer bg-white rounded-md font-medium text-custom-primaryblue hover:text-custom-secondaryblue focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-custom-primaryblue"
-                  >
-                    <span>Click or drag a file to this area to upload</span>
-                    <input
-                      id="file-upload"
-                      name="file-upload"
-                      type="file"
-                      className="sr-only"
-                      accept=".doc,.docx,.xls,.xlsx,.pdf,.jpg,.jpeg,.png"
-                    />
-                  </label>
-                </div>
-                <p className="text-xs text-gray-500">
-                  (Only Supports Microsoft Word, Excel, PDF, JPEG, and PNG files)
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <label htmlFor="special-note" className="block text-sm font-medium text-gray-700">Special Note or Request</label>
-            <textarea
-              id="special-note"
-              name="special-note"
-              rows={4}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-custom-primaryblue focus:border-custom-primaryblue"
-            ></textarea>
-          </div>
-        </div>
-
         <button
           type="submit"
+          disabled={isSending}
           className="w-full py-2 px-4 bg-custom-primaryblue text-white font-semibold rounded-md shadow-sm hover:bg-custom-secondaryblue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom-primaryblue"
         >
-          Submit
+          {isSending ? "Sending..." : "Submit"}
         </button>
       </form>
+      {isPopupVisible && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-6 w-11/12 max-w-md flex flex-col items-center">
+            <img src="/logo.png" alt="Logo" className="mx-auto mb-4" />
+
+            <p className="text-gray-800 text-center">{popupMessage}</p>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 w-full"
+              onClick={closePopup}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

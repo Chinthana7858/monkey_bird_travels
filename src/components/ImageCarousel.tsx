@@ -52,16 +52,16 @@ function Slider1() {
         style={{ backgroundImage: `url(${DATA[currentIndex]?.image})` }}
         className="relative w-full h-full duration-500 bg-center bg-cover"
       >
-        <div className="text-white text-center justify-center py-[30vh]">
+        <div className="text-white text-center justify-center py-[50vh]">
           <h1 className="lg:text-7xl text-3xl">{DATA[currentIndex]?.maintitle}</h1>
           <p className="lg:text-3xl text-xl">{DATA[currentIndex]?.subtitle}</p>
           <div className=" flex text-center justify-center my-[5vh]">
             {" "}
             <Link href="/Private-Driver">
-            <button className=" m-5 border-2 border-white bg-blue-500 py-1 px-2 hover:bg-blue-600">Private Driver</button>
+            <button className=" m-5 border-2 border-white bg-blue-500 py-1 px-2 hover:bg-blue-600 opacity-75">Private Driver</button>
             </Link> 
             <Link href="/Tour-Packages">
-            <button className=" m-5 border-2 border-white bg-red-500 py-1 px-2 hover:bg-red-600">Tour packages</button>
+            <button className=" m-5 border-2 border-white bg-green-800 py-1 px-2 hover:bg-green-900 opacity-75">Tour packages</button>
             </Link> 
           </div>
         </div>

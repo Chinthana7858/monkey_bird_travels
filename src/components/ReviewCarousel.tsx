@@ -1,31 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Review from './review';
-import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import { reviews } from '@/database/reviews';
 
-const reviews = [
-  {
-    reviewText: "This is an amazing place to visit. The staff were very friendly and the food was delicious! This is an amazing place to visit. The staff were very friendly and the food was delicious! This is an amazing place to visit. The staff were very friendly and the food was delicious! This is an amazing place to visit. The staff were very friendly and the food was delicious!",
-    reviewerName: "John Doe",
-    rating: 5,
-    username: "john_doe",
-    profilePictureUrl: "https://via.placeholder.com/150"
-  },
-  {
-    reviewText: "Great experience, but the room was a bit small.",
-    reviewerName: "Jane Smith",
-    rating: 4,
-    username: "jane_smith",
-    profilePictureUrl: "https://via.placeholder.com/150"
-  },
-  {
-    reviewText: "Lovely atmosphere and friendly staff. Highly recommend!",
-    reviewerName: "Alice Johnson",
-    rating: 5,
-    username: "alice_johnson",
-    profilePictureUrl: "https://via.placeholder.com/150"
-  }
-];
+
 
 const ReviewCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

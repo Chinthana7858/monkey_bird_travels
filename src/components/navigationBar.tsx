@@ -1,13 +1,13 @@
 "use client";
 import { useBooleanContext } from "@/context/boolcontext";
 import Link from "next/link";
-import {  useState } from "react";
+import { useState } from "react";
 import { FaInstagramSquare, FaWhatsapp, FaYoutubeSquare } from "react-icons/fa";
-import {  FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImFacebook2 } from "react-icons/im";
 import { IoIosArrowDown, IoIosArrowUp, IoIosCall } from "react-icons/io";
-import { IoMail } from "react-icons/io5";
+import { IoMailOutline } from "react-icons/io5";
 
 export default function Navbar() {
   const { booleanState, toggleBooleanState } = useBooleanContext();
@@ -52,36 +52,40 @@ export default function Navbar() {
           <div className=" justify-center flex md:border-2 md:w-full flex-col w-0 border-0 text-slate-700">
             <div className=" flex">
               <FaWhatsapp color="green" size={30} className=" p-1" />
-              +94 1700404
+              +94 70 312 9469
             </div>
             <div className=" flex">
-              <IoMail color="blue" size={30} className=" p-1" />
-              info@example.com
+              <IoMailOutline color="blue" size={30} className=" p-1" />
+              monkeybirdtravels@gmail.com
             </div>
           </div>
           <div className=" justify-center flex border-2 w-full flex-col text-slate-700">
             <div className=" flex">
               <IoIosCall color="blue" size={30} className=" p-1" />
-              +94 1700404
+              +94 70 312 9469
             </div>
             <div className=" flex">
-              <IoMail color="blue" size={30} className=" p-1" />
-              info@example.com
+              <IoMailOutline color="blue" size={30} className=" p-1" />
+              monkeybirdtravels@hotmail.com
             </div>
           </div>
           <div className="items-center justify-center flex border-2 w-full">
             <div className=" text-blue-600">
-              <ImFacebook2
-                size={40}
-                color=""
-                className=" hover:scale-110 cursor-pointer"
-                onClick={() => {
-                  toggleOurServices();
-                }}
-              />
+              <a href="https://www.facebook.com/monkeybirdtravels">
+                <ImFacebook2
+                  href="https://www.facebook.com/monkeybirdtravels"
+                  size={40}
+                  color=""
+                  className=" hover:scale-110 cursor-pointer"
+                  onClick={() => {
+                    toggleOurServices();
+                  }}
+                />
+              </a>
             </div>
             <div className="" style={{ color: "#E1306C" }}>
               <FaInstagramSquare
+                href=""
                 size={50}
                 color=""
                 className=" hover:scale-110 cursor-pointer"
@@ -286,7 +290,7 @@ export default function Navbar() {
                   Destinations
                 </li>
               </Link>
-              
+
               <Link href="/Things-To-Do">
                 <li className=" py-3 pl-3 border bg-custom-primaryblue text-white font-medium">
                   Things to do
