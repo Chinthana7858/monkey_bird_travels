@@ -27,9 +27,9 @@ export default function Home() {
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4 mx-auto">
-                    Tour Packages in Sri Lanka
+                 <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
+                  Tour Packages
                   </div>
                   <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
                     <Link href="/">
@@ -42,7 +42,7 @@ export default function Home() {
                     </span>
 
                     <IoIosArrowForward color="" size={30} className="mx-2" />
-                    <span> Tour Packages</span>
+                    <span>Tour Packages</span>
                   </div>
                 </div>
               </div>

@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="relative flex items-center justify-center bg-cover bg-center">
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
-              <div className="text-4xl lg:px-16 px-5 mb-5">
+              <div className="  text-3xl md:text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-blue-600">
                   Tourists Destinations in Sri Lanka
                 </div>

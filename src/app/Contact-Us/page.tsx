@@ -122,40 +122,40 @@ export default function Home() {
                   <div className=" text-slate-700 px-10 flex">
                     <a href="https://www.facebook.com/monkeybirdtravels">
                       <FaFacebookSquare
-                        size={50}
+                        size={40}
                         className=" mx-1 cursor-pointer"
                         style={{ color: "#4267B2" }}
                       />
                     </a>
                     <a href="https://wa.me/94703129469">
                       <FaWhatsappSquare
-                        size={50}
+                        size={40}
                         className=" mx-1 cursor-pointer"
                         style={{ color: "#25D366" }}
                       />
                     </a>
                     <FaSquareYoutube
-                      size={50}
+                      size={40}
                       className=" mx-1 cursor-pointer"
                       style={{ color: "#FF0000" }}
                     />
                     <FaInstagramSquare
-                      size={50}
+                      size={40}
                       className=" mx-1 cursor-pointer"
                       style={{ color: "#E1306C" }}
                     />
                     <FaSquareXTwitter
-                      size={50}
+                      size={40}
                       className=" mx-1 cursor-pointer"
                       style={{ color: "#282828" }}
                     />
                     <FaLinkedin
-                      size={50}
+                      size={40}
                       className=" mx-1 cursor-pointer"
                       style={{ color: "#4267B2" }}
                     />
                     <FaSquarePinterest
-                      size={50}
+                      size={40}
                       className=" mx-1 cursor-pointer"
                       style={{ color: "#E60023" }}
                     />
