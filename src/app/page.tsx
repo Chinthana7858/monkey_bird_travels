@@ -77,7 +77,7 @@ export default function Home() {
             Our most popular Tour Packages
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-full lg:w-[80vw] mx-auto p-5">
-            {tourPackages.map((packageInfo) => (
+            {tourPackages.slice(0, 3).map((packageInfo) => (
               <Link
                 href={`/Tour-Packages/${packageInfo.id}`}
                 key={packageInfo.id}
