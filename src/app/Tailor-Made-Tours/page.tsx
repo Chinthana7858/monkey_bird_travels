@@ -65,21 +65,21 @@ export default function Home() {
                 Looking for the perfect tailor-made holiday in Sri Lanka? Your
                 search ends here! Our team of travel experts specializes in
                 creating personalized Sri Lankan holiday experiences designed to
-                match your interests and preferences. Whether you’re seeking a
+                match your interests and preferences. Whether you are seeking a
                 relaxing beach getaway or an adrenaline-filled adventure tour,
                 we have something for everyone. From the breathtaking beaches of
                 the south to the lush hill country and cultural wonders of Sri
-                Lanka, we’ll help you discover the best destinations and
+                Lanka, we will help you discover the best destinations and
                 experiences this enchanting island has to offer. Choose from our
                 carefully curated holiday packages or let us design a custom
                 itinerary just for you. We also provide a wide range of
-                accommodation options, ensuring you’ll find the perfect place to
-                stay—whether it’s a luxury resort, boutique villa, or cozy
+                accommodation options, ensuring you will find the perfect place to
+                stay—whether it is a luxury resort, boutique villa, or cozy
                 guesthouse. With our convenient transport solutions, exploring
                 Sri Lanka has never been easier. Make your dream holiday a
                 reality with our tailor-made Sri Lankan tours. Let us take care
                 of every detail, so you can focus on enjoying an unforgettable
-                journey through one of the world’s most beautiful destinations.
+                journey through one of the world s most beautiful destinations.
               </div>
             </div>
           </div>

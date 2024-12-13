@@ -68,13 +68,13 @@ export default function Home() {
                 vans, mini-buses, and single-deck buses—all driven by
                 experienced and friendly drivers who know Sri Lanka inside out.
                 Whether you need a reliable taxi to take you from the airport to
-                your hotel, or you’re planning to explore the country’s hidden
-                gems with a private driver, we’ve got you covered. For those
+                your hotel, or you are planning to explore the country s hidden
+                gems with a private driver, we have got you covered. For those
                 staying in Colombo, our car hire services with drivers let you
-                explore the city’s iconic landmarks, such as Colombo Fort,
+                explore the city s iconic landmarks, such as Colombo Fort,
                 Gangaramaya Temple, and the National Museum, at your own pace.
                 Prefer a relaxing day by the ocean? We can take you to Sri
-                Lanka’s stunning beaches, where golden sands and turquoise
+                Lanka s stunning beaches, where golden sands and turquoise
                 waters await. Whatever your itinerary, our team is here to
                 ensure a safe, comfortable, and unforgettable experience.
                 Contact us today to book your vehicle and driver with Monkeybird

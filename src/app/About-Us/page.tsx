@@ -82,7 +82,7 @@ export default function Home() {
                 smiles of the locals, Sri Lanka offers a travel experience like
                 no other. At Monkeybird Travels, we don t just offer trips we
                 create memories that last a lifetime. Whether you are exploring
-                ancient ruins, marveling at the intricate beauty of Sri Lanka's
+                ancient ruins, marveling at the intricate beauty of Sri Lanka s
                 temples, or relaxing on its serene shores, your adventure will
                 be one to treasure forever. Let us guide you through the wonders
                 of the Land of Smiles. Pack your bags and let Monkeybird

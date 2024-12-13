@@ -63,7 +63,7 @@ export default function Home() {
                 let our knowledgeable and friendly guides take care of every
                 detail. From historical landmarks to breathtaking natural
                 beauty, we ensure your day trip is both enriching and enjoyable.
-                If you’re looking for a fun, convenient, and affordable way to
+                If you are looking for a fun, convenient, and affordable way to
                 experience the best of Sri Lanka, Monkeybird Travels has the
                 perfect one-day tour for you. Let us make your day
                 extraordinary!

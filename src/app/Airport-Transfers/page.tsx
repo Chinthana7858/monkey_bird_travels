@@ -66,13 +66,13 @@ export default function Home() {
                 Colombo and across the country. With experienced drivers who
                 know the best routes, we ensure a smooth and comfortable ride
                 every time. Our 24/7 availability means you can rely on us
-                anytime, whether you're traveling for business or leisure. From
-                the moment you land, we’ll take the stress out of your journey
+                anytime, whether you are traveling for business or leisure. From
+                the moment you land, we ill take the stress out of your journey
                 so you can relax and enjoy your trip. Our highly competitive
                 rates make Monkeybird Travels the perfect choice for all
                 your transportation needs, offering the best value without
-                compromising on quality. Wherever you’re headed in Sri Lanka,
-                we’re here to get you there safely and comfortably. Book with
+                compromising on quality. Wherever you are headed in Sri Lanka,
+                we are here to get you there safely and comfortably. Book with
                 Monkeybird Travels today and make your journey truly
                 worry-free!
               </div>
