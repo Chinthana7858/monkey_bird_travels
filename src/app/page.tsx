@@ -51,7 +51,7 @@ export default function Home() {
                 in Sri Lanka for your next extraordinary getaway. Your adventure
                 begins here.
               </div>
-              <div className="text-blue-600 px-5 lg:px-16  font-medium p-3 flex-1 lg:flex text-center">
+              <div className=" text-slate-600 px-5 lg:px-16   p-3 flex-1 lg:flex text-center font-sans">
                 <div>
                   <img src="https://i.imgur.com/c2DVMJA.png" />
                   <div className=" pt-6">Experienced Private Driver</div>
@@ -66,8 +66,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className=" basis-1/2">
-              <img src="https://i.imgur.com/qB77Ode.jpg" />
+            <div className="basis-1/2 w-full h-full">
+              <img
+                src="https://i.imgur.com/Yjq7xLw.jpg"
+                alt="Deer"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </section>
@@ -91,12 +95,12 @@ export default function Home() {
           </div>
           <div className="flex-1 lg:flex">
             <Destination
-              title="Slit fisherman"
+              title="Jaffna"
               imgUrl="https://i.imgur.com/Ypjeksa.jpg"
               key={1}
             />
             <Destination
-              title="Jaffna"
+              title="Yala"
               imgUrl="https://i.imgur.com/ERfq4i2.jpg"
               key={2}
             />

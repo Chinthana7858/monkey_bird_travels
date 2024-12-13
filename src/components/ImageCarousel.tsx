@@ -11,8 +11,18 @@ const DATA = [
     subtitle: "Sri Lanka",
   },
   {
-    image: "https://i.imgur.com/ThqdDyn.jpg",
+    image: "https://i.imgur.com/0tkkT92.jpg",
     maintitle: "Wonder of Asia",
+    subtitle: "Sri Lanka",
+  },
+  {
+    image: "https://i.imgur.com/KfyTf6P.jpg",
+    maintitle: "Nature's Masterpiece",
+    subtitle: "Sri Lanka",
+  },
+  {
+    image: "https://i.imgur.com/GtrqLq6.jpg",
+    maintitle: "Explore. Dream. Discover.",
     subtitle: "Sri Lanka",
   },
 ];

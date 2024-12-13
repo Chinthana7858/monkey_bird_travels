@@ -29,7 +29,7 @@ export default function Home() {
             <div className="relative w-screen h-full">
               <div className="relative w-screen h-full">
                 <img
-                  src="https://i.imgur.com/kri7cZJ.jpg"
+                  src="https://i.imgur.com/0tkkT92.jpg"
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
