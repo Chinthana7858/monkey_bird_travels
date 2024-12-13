@@ -40,7 +40,7 @@ export default function Footer() {
                   >
                     <div className=" flex">
                       <FaWhatsapp color="white" size={25} className=" pr-1" />{" "}
-                      +94 71 1700404
+                      +94 70 312 9469
                     </div>
                   </a>
                 </li>
@@ -48,7 +48,7 @@ export default function Footer() {
                   <a href="" className="hover:underline">
                     <div className=" flex">
                       <IoMail color="white" size={25} className=" pr-1" />
-                      info@laktravel.com
+                      monkeybirdtravels@gmail.com
                     </div>
                   </a>
                 </li>
@@ -56,7 +56,7 @@ export default function Footer() {
                   <a href="" className="hover:underline">
                     <div className=" flex">
                       <IoCallSharp color="white" size={25} className=" pr-1" />
-                      0711700404
+                      +94 70 312 9469
                     </div>
                   </a>
                 </li>
@@ -64,7 +64,7 @@ export default function Footer() {
                   <a href="" className="hover:underline">
                     <div className=" flex">
                       <FaHome color="white" size={25} className=" pr-1" />
-                      No 34, ABC Mawatha, Colombo 03
+                      555 Sama Mawatha, Yakkaduwa
                     </div>
                   </a>
                 </li>

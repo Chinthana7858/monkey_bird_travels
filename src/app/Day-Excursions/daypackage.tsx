@@ -3,7 +3,7 @@ import { FaCalendarDay } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import { MdArrowForwardIos } from "react-icons/md";
 
-interface TourPackageProps {
+interface DayPackageProps {
   id:string;
     name: string;
     imgUrl: string;
@@ -13,7 +13,7 @@ interface TourPackageProps {
     season: string;
   }
   
-  export default function TourPackage({
+  export default function DayPackage({
     id,
     name,
     imgUrl,
@@ -21,7 +21,7 @@ interface TourPackageProps {
     numOfDays,
     numOfPeople,
     season,
-  }: TourPackageProps) {
+  }: DayPackageProps) {
     return (
       <div className="w-full border-2 border-white rounded-lg overflow-hidden flex flex-col xl:h-[70vh] lg:h-[50vh] shadow-2xl">
         <div className="h-2/3">
@@ -39,8 +39,9 @@ interface TourPackageProps {
             <IoLocation size={20}/> {description}
             </div>
           </div>
-          <div className="text-white font-medium p-3 bg-red-950 flex justify-between cursor-pointer">
-          Explore<MdArrowForwardIos  size={20}/>
+          
+          <div className="text-white font-medium p-3 bg-green-900 flex justify-between">
+          
           </div>
         </div>
       </div>

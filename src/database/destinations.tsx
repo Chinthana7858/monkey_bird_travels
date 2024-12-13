@@ -30,5 +30,6 @@ export const destinations = [
     title: "Punarin",
     imgUrl: "https://i.imgur.com/iQeKM8F.jpg",
   },
+  
 
 ];

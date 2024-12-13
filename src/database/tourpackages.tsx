@@ -117,4 +117,117 @@ export const tourPackages = [
     mapsrc:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31611.41818278453!2d80.72363576306667!3d7.954720195420389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca0dfa73179d1%3A0x1e04c1150cff0edf!2sSigiriya!5e0!3m2!1sen!2slk!4v1733981054606!5m2!1sen!2slk",
   },
+  {
+    id: "4",
+    name: "Ella Scenic Escape",
+    imgUrl: "https://i.imgur.com/dpGXe2b.jpg", // Replace with an appropriate image URL
+    description: "Discover the breathtaking views and trails of Ella.",
+    numOfDays: "Three",
+    numOfNights: "Two",
+    numOfPeople: "1-7",
+    season: "October to April",
+    longDescription:
+      "Ella, nestled in the hill country, offers stunning vistas, tranquil trails, and cultural landmarks. From hiking up Ella Rock and Little Adam’s Peak to visiting the iconic Nine Arches Bridge, this tour is perfect for nature lovers and adventure seekers.",
+    destinations: ["Ella Rock", "Nine Arches Bridge", "Little Adam’s Peak"],
+    images: [
+      "https://i.imgur.com/wmOq8kl.jpg",
+      "https://i.imgur.com/GLxeiND.jpg",
+      "https://i.imgur.com/OCysyuI.jpg",
+      "https://i.imgur.com/7GwH6xu.jpg",
+    ],
+    difficulty: "Moderate",
+    tourtype: "Adventure, Nature, Cultural",
+    date: "Available all year round",
+    touritinerary: [
+      {
+        title: "DAY 01 - ARRIVE AT ELLA",
+        desc: "Enjoy a scenic train ride to Ella. Visit the Nine Arches Bridge and relax in your hotel.",
+        point: "Stay Overnight in Ella.",
+      },
+      {
+        title: "DAY 02 - NATURE & TRAILS",
+        desc: "Hike up Ella Rock and Little Adam’s Peak. Spend the evening exploring Ella town.",
+        point: "Stay Overnight in Ella.",
+      },
+      {
+        title: "DAY 03 - DEPARTURE",
+        desc: "Enjoy a relaxing morning before returning to Colombo.",
+        point: "End of the tour.",
+      },
+    ],
+    mapsrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63453.72949587569!2d81.04622833978358!3d6.866841135566448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3cbdfda6278b5%3A0x8bfc7c173ee3fc3!2sElla!5e0!3m2!1sen!2slk!4v1733981054607!5m2!1sen!2slk",
+  },
+  {
+    id: "5",
+    name: "Galle and Southern Coast",
+    imgUrl: "https://i.imgur.com/dpGXe2b.jpg", // Replace with an appropriate image URL
+    description: "Explore the colonial charm of Galle and unwind on the southern beaches.",
+    numOfDays: "Two",
+    numOfNights: "One",
+    numOfPeople: "1-10",
+    season: "Year-round",
+    longDescription:
+      "Discover the beauty of Sri Lanka's southern coast. Visit the iconic Galle Fort, indulge in fresh seafood, and relax on serene beaches like Mirissa or Unawatuna. Perfect for a mix of culture and relaxation.",
+    destinations: ["Galle Fort", "Unawatuna Beach", "Mirissa"],
+    images: [
+      "https://i.imgur.com/wmOq8kl.jpg",
+      "https://i.imgur.com/GLxeiND.jpg",
+      "https://i.imgur.com/OCysyuI.jpg",
+      "https://i.imgur.com/7GwH6xu.jpg",
+    ],
+    difficulty: "Easy",
+    tourtype: "Cultural, Beach, Relaxation",
+    date: "Available all year round",
+    touritinerary: [
+      {
+        title: "DAY 01 - EXPLORE GALLE",
+        desc: "Arrive at Galle. Tour Galle Fort, visit the lighthouse, and enjoy a seafood dinner.",
+        point: "Stay Overnight in Galle.",
+      },
+      {
+        title: "DAY 02 - BEACH DAY",
+        desc: "Relax at Unawatuna or Mirissa Beach before heading back to Colombo.",
+        point: "End of the tour.",
+      },
+    ],
+    mapsrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63480.837540476736!2d80.17079722858446!3d6.055975349934985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle!5e0!3m2!1sen!2slk!4v1733981081892!5m2!1sen!2slk",
+  },
+  {
+    id: "6",
+    name: "Yala Safari Adventure",
+    imgUrl: "https://i.imgur.com/dpGXe2b.jpg", // Replace with an appropriate image URL
+    description: "Embark on an unforgettable wildlife safari at Yala National Park.",
+    numOfDays: "Two",
+    numOfNights: "One",
+    numOfPeople: "1-7",
+    season: "May to October",
+    longDescription:
+      "Yala National Park is home to leopards, elephants, and an array of exotic wildlife. Experience a thrilling safari tour, followed by a relaxing evening in a safari lodge. A perfect blend of adventure and serenity.",
+    destinations: ["Yala National Park"],
+    images: [
+      "https://i.imgur.com/wmOq8kl.jpg",
+      "https://i.imgur.com/GLxeiND.jpg",
+      "https://i.imgur.com/OCysyuI.jpg",
+      "https://i.imgur.com/7GwH6xu.jpg",
+    ],
+    difficulty: "Moderate",
+    tourtype: "Adventure, Wildlife, Nature",
+    date: "Available year-round",
+    touritinerary: [
+      {
+        title: "DAY 01 - ARRIVAL & SAFARI",
+        desc: "Arrive at Yala and enjoy an evening safari. Spot leopards, elephants, and other wildlife.",
+        point: "Stay Overnight at Yala.",
+      },
+      {
+        title: "DAY 02 - MORNING SAFARI & RETURN",
+        desc: "Take an early morning safari to witness the park's wildlife at its most active. Return to Colombo.",
+        point: "End of the tour.",
+      },
+    ],
+    mapsrc:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63347.21849934997!2d81.4103327037494!3d6.289072532547406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1ff6c7baf513f%3A0x3d6f3c3ef9823df2!2sYala%20National%20Park!5e0!3m2!1sen!2slk!4v1733981082193!5m2!1sen!2slk",
+  },
 ];
