@@ -176,7 +176,7 @@ export default function TourPackagePage() {
                   </div>
                 </div>
                 <div className=" mx-auto">
-                  <Imageslider images={tourPackage.images} />
+                  <Imageslider images={tourPackage.accomodation} />
                 </div>
                 <div className="font-semibold text-custom-primaryblue bg-white my-2">
                   <div className="text-lg lg:text-xl  p-1">Tour Route Map</div>
