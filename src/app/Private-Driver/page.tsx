@@ -29,7 +29,24 @@ export default function Home() {
                   className="w-screen lg:h-screen h-[50vh] object-cover"
                   alt="Background"
                 />
-             
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
+                    Private Driver
+                  </div>
+                  <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
+                    <Link href="/">
+                      {" "}
+                      <MdHome color="" size={30} className="mr-2" />{" "}
+                    </Link>
+                    <span>
+                      {" "}
+                      <Link href="/">Home</Link>
+                    </span>
+
+                    <IoIosArrowForward color="" size={30} className="mx-2" />
+                    <span>Private Driver</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -37,7 +54,7 @@ export default function Home() {
             <div className="bg-white bg-opacity-75 p-5 rounded-lg  text-center">
               <div className="text-3xl md:text-4xl lg:px-16 px-5 mb-5">
                 <div className="font-semibold text-blue-600">
-                Your Trusted Private Driver Service
+                  Your Trusted Private Driver Service
                 </div>
               </div>
               <div className=" px-5 lg:px-16 font-medium flex-1 lg:flex">
@@ -60,9 +77,9 @@ export default function Home() {
                   your trip and recommend the must-see destinations across Sri
                   Lanka. From historic landmarks to scenic beaches and hidden
                   gems, we ensure you will have an unforgettable experience. If
-                  you are looking for a convenient, safe, and personalized way to
-                  explore Sri Lanka, Monkeybird Travels is here to take care of
-                  all your travel needs. Contact us today and embark on a
+                  you are looking for a convenient, safe, and personalized way
+                  to explore Sri Lanka, Monkeybird Travels is here to take care
+                  of all your travel needs. Contact us today and embark on a
                   journey of discovery, comfort, and adventure!
                   <div className="basis-1/2 text-slate-800 p-4">
                     <ul className=" columns-1 lg:columns-2 list-disc list-inside">

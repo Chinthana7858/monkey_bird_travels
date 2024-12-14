@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className=" justify-center flex md:border-2 md:w-full flex-col w-0 border-0 text-slate-700">
             <div className=" flex">
               <FaWhatsapp color="green" size={30} className=" p-1" />
-              +94 70 312 9469
+              +94 72 572 1428
             </div>
             <div className=" flex">
               <IoMailOutline color="blue" size={30} className=" p-1" />
@@ -62,7 +62,7 @@ export default function Navbar() {
           <div className=" justify-center flex border-2 w-full flex-col text-slate-700">
             <div className=" flex">
               <IoIosCall color="blue" size={30} className=" p-1" />
-              +94 70 312 9469
+              +94 72 572 1428
             </div>
             <div className=" flex">
               <IoMailOutline color="blue" size={30} className=" p-1" />

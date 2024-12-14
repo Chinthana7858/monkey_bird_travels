@@ -40,7 +40,7 @@ export default function Footer() {
                   >
                     <div className=" flex">
                       <FaWhatsapp color="white" size={25} className=" pr-1" />{" "}
-                      +94 70 312 9469
+                      +94 72 572 1428
                     </div>
                   </a>
                 </li>
@@ -56,7 +56,7 @@ export default function Footer() {
                   <a href="" className="hover:underline">
                     <div className=" flex">
                       <IoCallSharp color="white" size={25} className=" pr-1" />
-                      +94 70 312 9469
+                      +94 72 5721 428
                     </div>
                   </a>
                 </li>
