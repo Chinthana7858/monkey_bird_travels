@@ -24,7 +24,7 @@ const TourItineraryItem: React.FC<TourItineraryItemProps> = ({
   }
 
   return (
-    <div className=" my-1 border-2 border-slate-500">
+    <div className=" my-1 border-2 border-custom-primaryblue rounded-lg">
       <div className="text-sm lg:text-lg font-semibold flex text-custom-secondaryblue p-2">
         <div onClick={toggleSelect} className=" cursor-pointer">
           {select ? (

@@ -110,7 +110,7 @@ export default function Home() {
                         Phone Number
                       </div>
                       <div className="lg:text-lg md:text-md text-sm">
-                        +94 70 312 9469
+                        +94 72 572 1428
                       </div>
                     </div>
                   </div>

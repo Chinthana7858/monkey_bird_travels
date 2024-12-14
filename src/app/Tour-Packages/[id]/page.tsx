@@ -38,34 +38,19 @@ export default function TourPackagePage() {
             className="w-full lg:h-screen h-[50vh] object-cover"
             alt="Background"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <div className="text-white text-4xl font-bold drop-shadow-md mb-4">
-              {tourPackage.name}
-            </div>
-            <div className="flex items-center text-white text-2xl font-bold drop-shadow-md">
-              <Link href="/">
-                <MdHome color="" size={30} className="mr-2" />
-              </Link>
-              <span>
-                <Link href="/">Home</Link>
-              </span>
-              <IoIosArrowForward color="" size={30} className="mx-2" />
-              <span> {tourPackage.name}</span>
-            </div>
-          </div>
         </section>
         <section>
           <div className=" flex-1 lg:flex">
             <div className=" lg:w-[67vw]">
               <div className="mx-2 px-1">
                 <div className="font-semibold text-white bg-custom-primaryblue my-2">
-                  <div className="text-xl lg:text-3xl  p-1">
+                  <div className="text-lg lg:text-2xl  p-1">
                     {tourPackage.name}
                   </div>
                 </div>
 
                 <div className=" flex py-5">
-                  <div className=" flex pr-5 text-xl font-semibold">
+                  <div className=" flex pr-5 text-lg font-semibold">
                     <IoIosTimer
                       size={30}
                       className=" text-yellow-600 font-bold mr-1"
@@ -77,7 +62,7 @@ export default function TourPackagePage() {
                     </div>
                   </div>
 
-                  <div className=" flex pr-5 text-xl font-semibold">
+                  <div className=" flex pr-5 text-lg font-semibold">
                     <IoCalendarClearOutline
                       size={30}
                       className=" text-yellow-600 font-bold mr-1"
@@ -89,7 +74,7 @@ export default function TourPackagePage() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-wrap space-x-4 bg-custom-secondaryblue text-white text-lg font-medium p-1 ">
+                <div className="flex flex-wrap space-x-4 bg-custom-secondaryblue text-white text-md font-medium p-1 ">
                   {tourPackage.destinations.map((destination, index) => (
                     <span key={index} className="flex items-center mb-2">
                       <IoLocationSharp className="mr-2 text-yellow-500" />{" "}
@@ -97,7 +82,7 @@ export default function TourPackagePage() {
                     </span>
                   ))}
                 </div>
-                <div className="text-slate-800  font-medium text-justify">
+                <div className="text-slate-800  font-medium text-justify text-sm  md:text-base">
                   {tourPackage.longDescription}
                 </div>
                 <div className="font-semibold text-custom-primaryblue bg-white my-2">
@@ -114,7 +99,7 @@ export default function TourPackagePage() {
                   <div className=" flex-1 lg:flex py-5">
                     <div className=" flex p-3 text-lg lg:text-xl font-semibold basis-1/3 ">
                       <AiFillThunderbolt
-                        size={50}
+                        size={40}
                         className=" text-yellow-600 font-bold mr-1"
                       />
                       <div className=" text-blue-950">
@@ -127,7 +112,7 @@ export default function TourPackagePage() {
 
                     <div className=" flex p-3 text-lg lg:text-xl font-semibold basis-1/3">
                       <MdTour
-                        size={50}
+                        size={40}
                         className=" text-yellow-600 font-bold mr-1"
                       />
                       <div className=" text-blue-950">
@@ -140,7 +125,7 @@ export default function TourPackagePage() {
                     </div>
                     <div className=" flex p-3 text-lg lg:text-xl font-semibold basis-auto">
                       <FaMapLocationDot
-                        size={50}
+                        size={40}
                         className=" text-yellow-600 font-bold mr-1"
                       />
                       <div className=" text-blue-950">
@@ -181,15 +166,10 @@ export default function TourPackagePage() {
                 <div className="font-semibold text-custom-primaryblue bg-white my-2">
                   <div className="text-lg lg:text-xl  p-1">Tour Route Map</div>
                 </div>
-                <GoogleMapComponent
-                  src={
-                    tourPackage.mapsrc
-                  }
-                />
-                
+                <GoogleMapComponent src={tourPackage.mapsrc} />
               </div>
             </div>
-            <div className=" w-[30vw]">
+            <div className=" md:w-[30vw]">
               <ContactDetails />
               <AutoChangingTourPackages />
               <QuickContact />

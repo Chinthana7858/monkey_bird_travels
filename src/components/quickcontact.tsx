@@ -198,14 +198,14 @@ export function ContactDetails() {
         happy to talk to you.
       </p>
       <p className="text-md flex relative z-10">
-        <IoIosCall size={30} className="px-1" /> +94 70 312 9469
+        <IoIosCall size={30} className="px-1" /> +94 72 572 1428
       </p>
       <p className="text-md flex relative z-10">
         <IoMail size={30} className="px-1" />
         monkeybirdtravels@gmail.com
       </p>
       <p className="text-md flex relative z-10">
-        <IoLogoWhatsapp size={30} className="px-1" /> +94 70 312 9469
+        <IoLogoWhatsapp size={30} className="px-1" /> +94 72 572 1428
       </p>
     </div>
   );
