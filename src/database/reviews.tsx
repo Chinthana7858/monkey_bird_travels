@@ -5,7 +5,7 @@ export const reviews = [
       reviewerName: "Rachel Green",
       rating: 5,
       username: "rachel.green",
-      profilePictureUrl: "https://via.placeholder.com/150",
+      profilePictureUrl: "https://imgur.com/a/QFMZ9if",
     },
     {
       reviewText:
@@ -13,7 +13,7 @@ export const reviews = [
       reviewerName: "James Wilson",
       rating: 4,
       username: "james.wilson",
-      profilePictureUrl: "https://via.placeholder.com/150",
+      profilePictureUrl: "https://imgur.com/a/QFMZ9if",
     },
     {
       reviewText:
@@ -21,7 +21,7 @@ export const reviews = [
       reviewerName: "Sophia Martinez",
       rating: 5,
       username: "sophia.martinez",
-      profilePictureUrl: "https://via.placeholder.com/150",
+      profilePictureUrl: "https://imgur.com/a/QFMZ9if",
     },
     {
       reviewText:
@@ -29,7 +29,7 @@ export const reviews = [
       reviewerName: "Ethan Patel",
       rating: 5,
       username: "ethan.patel",
-      profilePictureUrl: "https://via.placeholder.com/150",
+      profilePictureUrl: "https://imgur.com/a/QFMZ9if",
     },
     {
       reviewText:
@@ -37,7 +37,7 @@ export const reviews = [
       reviewerName: "Lily Adams",
       rating: 5,
       username: "lily.adams",
-      profilePictureUrl: "https://via.placeholder.com/150",
+      profilePictureUrl: "https://imgur.com/a/QFMZ9if",
     },
     {
       reviewText:
@@ -45,7 +45,7 @@ export const reviews = [
       reviewerName: "Daniel Thompson",
       rating: 5,
       username: "daniel.thompson",
-      profilePictureUrl: "https://via.placeholder.com/150",
+      profilePictureUrl: "https://imgur.com/a/QFMZ9if",
     },
   ];
   
